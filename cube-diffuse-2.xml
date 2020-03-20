@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Mitsuba conversion of the classic Cornell Box scene (mitsuba-renderer.org).
+	Edited by us to have an upside-down light source.
+-->
+<scene version="0.6.0">
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="10"/>
+	</integrator>
+
+	<sensor type="perspective">
+		<string name="fovAxis" value="smaller"/>
+		<float name="nearClip" value="10"/>
+		<float name="farClip" value="2800"/>
+		<float name="focusDistance" value="1000"/>
+		<transform name="toWorld">
+			<lookAt origin="278, 1373, 270" target="278, 1273, 271" up="0, 1, 0"/>
+		</transform>
+		<float name="fov" value="39.3077"/>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="10000"/>
+		</sampler>
+		<float name='shutterOpen' value='0'/>
+        <float name='shutterClose' value='1'/>
+		<film type="hdrfilm">
+			<integer name="width" value="512"/>
+			<integer name="height" value="512"/>
+			<boolean name="banner" value="false"/>
+
+			<rfilter type="box"/>
+		</film>
+	</sensor>
+
+	<bsdf type="diffuse" id="wall">
+		<rgb name="reflectance" value="0.8,0.8,0.8"/>
+	</bsdf>
+	
+	<bsdf type="roughplastic" id="wall_old2">
+		<rgb name="diffuseReflectance" value="0.8, 0.8, 0.8"/>
+	</bsdf>
+	
+	<bsdf type="roughplastic" id="wall_glossy">
+			<!--<rgb name="diffuseReflectance" value="0.07 0.09 0.13"/>-->
+			<spectrum name="specularReflectance" value="1"/>
+			<float name="intIOR" value="2"/>
+			<float name="alpha" value="0.05"/>
+	</bsdf>
+
+	<bsdf type="diffuse" id="light">
+		<spectrum name="reflectance" value="400:0.78, 500:0.78, 600:0.78, 700:0.78"/>
+	</bsdf>
+	
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_luminaire.obj"/>
+		<transform name="toWorld">
+			<translate x="-80" y="-365" z="-10"/>
+			<scale x="1.4" y="1" z="1.7" />
+			<rotate z="1" angle="90"/>
+		</transform>
+
+		<ref id="light"/>
+
+		<emitter type="area">
+			<spectrum name="radiance" value="400:4000, 500:4008, 600:4015.6, 700:4018.4"/>
+		</emitter>
+	</shape>
+	
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_luminaire.obj"/>
+		<transform name="toWorld">
+			<translate x="-80" y="-365" z="-210"/>
+			<scale x="1.4" y="1" z="1.7" />
+			<rotate z="1" angle="90"/>
+		</transform>
+
+		<ref id="light"/>
+
+		<emitter type="area">
+			<spectrum name="radiance" value="400:4000, 500:4008, 600:4015.6, 700:4018.4"/>
+		</emitter>
+	</shape>
+	
+	<!--<shape type="cube">
+		<transform name="toWorld">
+			<scale x="10" y="10" z="10"/>
+			<translate x="300" y="0" z="300" />
+		</transform>
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="1,0,0"/>
+		</bsdf>
+	</shape>-->
+	
+	<!--<shape type="cube">
+		<transform name="toWorld">
+			<scale x="98" y="98" z="10"/>
+			<translate x="-100" y="275" z="275" />
+		</transform>
+		<ref id="wall"/>
+	</shape>-->
+	<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale x="10" y="98" z="50"/>
+				<translate x="-10" y="275" z="490" />
+			</transform>
+			<transform time="1">
+				<scale x="10" y="98" z="50"/>
+				<translate x="-10" y="275" z="420" />
+			</transform>
+		</animation>
+		<ref id="wall"/>
+	</shape>
+	
+	<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale x="10" y="98" z="50"/>
+				<translate x="-10" y="275" z="150" />
+			</transform>
+			<transform time="1">
+				<scale x="10" y="98" z="50"/>
+				<translate x="-10" y="275" z="80" />
+			</transform>
+		</animation>
+		<ref id="wall"/>
+	</shape>
+	
+	<shape type="obj">
+		<!--<string name="filename" value="meshes/squarehole2.obj"/>-->
+		<string name="filename" value="meshes/cube_holes_half1.obj"/>
+		
+		<animation name="toWorld">
+			<transform time="0">
+				<rotate x="1"  angle="90" />
+				<scale x="100" y="100" z="100"/>
+				<translate x="-100" y="275" z="120"/>
+			</transform>
+		</animation>
+		<ref id="wall"/>
+	</shape>
+	
+	<shape type="obj">
+		<!--<string name="filename" value="meshes/squarehole2.obj"/>-->
+		<string name="filename" value="meshes/cube_holes_half2.obj"/>
+		
+		<animation name="toWorld">
+			<transform time="0">
+				<rotate x="1"  angle="90" />
+				<scale x="100" y="100" z="100"/>
+				<translate x="-100" y="275" z="450"/>
+			</transform>
+		</animation>
+		<ref id="wall"/>
+	</shape>
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_floor.obj"/>
+		<transform name="toWorld">
+			<translate x="300" y="0" z="0"/>
+			<scale x="0.65" y="1" z="1"/>
+		</transform>
+		<ref id="wall"/>
+	</shape>
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_back.obj"/>
+		<transform name="toWorld">
+		
+			<translate x="300" y="0" z="0"/>
+			<scale x="0.65" y="1" z="1"/>
+		</transform>
+		<ref id="wall"/>
+	</shape>
+	
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_back.obj"/>
+		<transform name="toWorld">
+		
+			<rotate y="1" angle="180"/>
+			<translate x="855" y="0" z="565"/>
+			<scale x="0.65" y="1" z="1"/>
+		</transform>
+		<ref id="wall"/>
+	</shape>
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_redwall.obj"/>
+
+		<ref id="wall"/>
+	</shape>
+	
+</scene>
