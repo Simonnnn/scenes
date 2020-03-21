@@ -5,7 +5,7 @@
 	Edited by us to have an upside-down light source.
 -->
 <scene version="0.6.0">
-	<integrator type="bdpt">
+	<integrator type="pssmlt">
 		<integer name="rrDepth" value="10"/>
 	</integrator>
 
