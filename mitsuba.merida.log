@@ -1,0 +1,68 @@
+2020-03-20 16:59:57 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-03-20 16:59:57 INFO  main [mitsuba.cpp:377] Parsing scene description from "cube-diffuse-2.xml" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2020-03-20 16:59:57 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-03-20 16:59:57 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-03-20 16:59:57 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2020-03-20 16:59:57 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-03-20 16:59:57 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cube_holes_half1.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cube_holes_half1: 60 triangles, 96 vertices (merged 84 vertices).
+2020-03-20 16:59:57 WARN  main [WavefrontOBJ] Could not find referenced material library 'cube_holes_half1.mtl.mtl'
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cube_holes_half1.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cube_holes_half2.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cube_holes_half2: 60 triangles, 96 vertices (merged 84 vertices).
+2020-03-20 16:59:57 WARN  main [WavefrontOBJ] Could not find referenced material library 'cube_holes_half2.mtl'
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cube_holes_half2.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-20 16:59:57 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
+2020-03-20 16:59:57 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (134 primitives) ..
+2020-03-20 16:59:57 INFO  ren0 [KDTreeBase] Finished -- took 1 ms.
+2020-03-20 16:59:57 INFO  ren0 [BDPTIntegrator] Starting render job (512x512, 10000 samples, 24 cores, SSE2 enabled) ..
+2020-03-20 17:25:30 INFO  ren0 [RenderJob] Render time: 25.5504m
+2020-03-20 17:25:30 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/cube-diffuse-2.exr" ..
+2020-03-20 17:25:30 INFO  main [statistics.cpp:142] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/bdpt.so [Bidirectional path tracer]
+    -  plugins/box.so [Box filter]
+    -  plugins/cube.so [Cube intersection primitive]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/independent.so [Independent sampler]
+    -  plugins/instance.so [Instanced geometry]
+    -  plugins/obj.so [OBJ triangle mesh loader]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/shapegroup.so [Grouped geometry for instancing]
+
+  * General :
+    -  Normal rays traced : 14.734 G
+------------------------------------------------------------
