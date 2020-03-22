@@ -1,60 +1,59 @@
-2020-03-22 18:29:48 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-03-22 18:29:48 INFO  main [mitsuba.cpp:377] Parsing scene description from "cube-diffuse-2.xml" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/pssmlt.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
-2020-03-22 18:29:48 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-03-22 18:29:48 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-03-22 18:29:48 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
-2020-03-22 18:29:48 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-03-22 18:29:48 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cube_holes_half1.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cube_holes_half1: 60 triangles, 96 vertices (merged 84 vertices).
-2020-03-22 18:29:48 WARN  main [WavefrontOBJ] Could not find referenced material library 'cube_holes_half1.mtl.mtl'
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cube_holes_half1.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cube_holes_half2.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cube_holes_half2: 60 triangles, 96 vertices (merged 84 vertices).
-2020-03-22 18:29:48 WARN  main [WavefrontOBJ] Could not find referenced material library 'cube_holes_half2.mtl'
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cube_holes_half2.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-22 18:29:48 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
-2020-03-22 18:29:48 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (134 primitives) ..
-2020-03-22 18:29:48 INFO  ren0 [KDTreeBase] Finished -- took 1 ms.
-2020-03-22 18:29:48 INFO  ren0 [PSSMLT] Starting render job (512x512, 24 cores, SSE2 enabled, approx. 10000 mutations/pixel) ..
-2020-03-22 18:29:48 WARN  ren0 [PSSMLT] Warning: increasing number of luminance samples to 262150
-2020-03-22 18:29:48 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
-2020-03-22 18:29:48 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
-2020-03-22 18:29:48 WARN  ren0 [LowDiscrepancySampler] Sample count should be a power of two -- rounding to 8
-2020-03-22 18:29:48 INFO  ren0 [SamplingIntegrator] Starting render job (512x512, 8 samples, 24 cores, SSE2 enabled) ..
-2020-03-22 18:29:58 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (262150 samples)..
-2020-03-22 18:30:01 INFO  ren0 [PathSampler] Done -- average luminance value = 0.014081, stddev = 0.887180 (took 2269 ms)
-2020-03-22 20:02:14 INFO  ren0 [RenderJob] Render time: 1.5407h
-2020-03-22 20:02:14 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/cube-diffuse-2.exr" ..
-2020-03-22 20:02:14 INFO  main [statistics.cpp:142] Statistics:
+2020-03-22 20:13:52 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-03-22 20:13:52 INFO  main [mitsuba.cpp:377] Parsing scene description from "cube-diffuse-2.xml" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/pssmlt.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2020-03-22 20:13:52 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-03-22 20:13:52 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-03-22 20:13:52 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2020-03-22 20:13:52 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-03-22 20:13:52 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cube_holes_half1.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cube_holes_half1: 60 triangles, 96 vertices (merged 84 vertices).
+2020-03-22 20:13:52 WARN  main [WavefrontOBJ] Could not find referenced material library 'cube_holes_half1.mtl.mtl'
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cube_holes_half1.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cube_holes_half2.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cube_holes_half2: 60 triangles, 96 vertices (merged 84 vertices).
+2020-03-22 20:13:52 WARN  main [WavefrontOBJ] Could not find referenced material library 'cube_holes_half2.mtl'
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cube_holes_half2.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-22 20:13:52 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
+2020-03-22 20:13:52 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (134 primitives) ..
+2020-03-22 20:13:52 INFO  ren0 [KDTreeBase] Finished -- took 1 ms.
+2020-03-22 20:13:52 INFO  ren0 [PSSMLT] Starting render job (512x512, 24 cores, SSE2 enabled, approx. 10000 mutations/pixel) ..
+2020-03-22 20:13:52 WARN  ren0 [PSSMLT] Warning: increasing number of luminance samples to 262150
+2020-03-22 20:13:52 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
+2020-03-22 20:13:52 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2020-03-22 20:13:52 INFO  ren0 [SamplingIntegrator] Starting render job (512x512, 4 samples, 24 cores, SSE2 enabled) ..
+2020-03-22 20:15:15 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (262150 samples)..
+2020-03-22 20:15:18 INFO  ren0 [PathSampler] Done -- average luminance value = 0.014081, stddev = 0.887180 (took 2232 ms)
+2020-03-22 21:48:06 INFO  ren0 [RenderJob] Render time: 1.5704h
+2020-03-22 21:48:06 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/cube-diffuse-2.exr" ..
+2020-03-22 21:48:06 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
     -  plugins/area.so [Area light]
@@ -73,11 +72,11 @@
     -  plugins/shapegroup.so [Grouped geometry for instancing]
 
   * General :
-    -  Normal rays traced : 53.583 G
-    -  Shadow rays traced : 143.995 M
+    -  Normal rays traced : 54.772 G
+    -  Shadow rays traced : 1.152 G
 
   * Primary sample space MLT :
-    -  Accepted large steps : 0.02 % (190.61 K of 786.39 M)
-    -  Accepted small steps : 40.10 % (735.77 M of 1.84 G)
-    -  Overall acceptance rate : 28.08 % (735.96 M of 2.62 G)
+    -  Accepted large steps : 0.02 % (189.91 K of 786.43 M)
+    -  Accepted small steps : 40.07 % (735.20 M of 1.83 G)
+    -  Overall acceptance rate : 28.05 % (735.39 M of 2.62 G)
 ------------------------------------------------------------
