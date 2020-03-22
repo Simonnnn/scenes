@@ -6,6 +6,7 @@
 -->
 <scene version="0.6.0">
 	<integrator type="pssmlt">
+		<integer name="directSamples" value="1000"/>
 		<integer name="rrDepth" value="10"/>
 	</integrator>
 
