@@ -29,8 +29,8 @@
         <float name='shutterClose' value='0'/>
 		<film type="hdrfilm">
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="512"/>
-			<integer name="width" value="512"/>
+			<integer name="height" value="150"/>
+			<integer name="width" value="150"/>
 
 			<rfilter type="box"/>
 		</film>
