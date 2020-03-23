@@ -217,7 +217,7 @@
 			<translate x="300" y="0" z="0"/>
 			<scale x="0.65" y="1" z="1"/>
 		</transform>
-		<ref id="wall"/>
+		<ref id="wall_old"/>
 	</shape>
 
 	<!--<shape type="obj">
@@ -234,7 +234,7 @@
 			<translate x="300" y="0" z="0"/>
 			<scale x="0.65" y="1" z="1"/>
 		</transform>
-		<ref id="wall"/>
+		<ref id="wall_old"/>
 	</shape>
 	
 	<shape type="obj">
@@ -245,7 +245,7 @@
 			<translate x="855" y="0" z="565"/>
 			<scale x="0.65" y="1" z="1"/>
 		</transform>
-		<ref id="wall"/>
+		<ref id="wall_old"/>
 	</shape>
 
 	<!--<shape type="obj">
