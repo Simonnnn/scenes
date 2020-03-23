@@ -6,7 +6,7 @@
 -->
 <scene version="0.6.0">
 	<integrator type="mlt">
-		<integer name="directSamples" value="131072"/>
+		<integer name="directSamples" value="262144"/>
 		<integer name="rrDepth" value="10"/>
 	</integrator>
 
@@ -21,7 +21,7 @@
 		<float name="fov" value="39.3077"/>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="131072"/>
+			<integer name="sampleCount" value="262144"/>
 		</sampler>
 		<float name='shutterOpen' value='0'/>
         <float name='shutterClose' value='1'/>
