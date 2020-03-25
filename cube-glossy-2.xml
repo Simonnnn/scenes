@@ -290,7 +290,7 @@
 			<scale z="1" y="1" x="0.65"/>
 		</transform>
 
-		<ref id="wall"/>
+		<ref id="wall_glossy"/>
 	</shape>
 
 	<shape type="obj">
@@ -300,7 +300,7 @@
 			<scale z="1" y="1" x="0.65"/>
 		</transform>
 
-		<ref id="wall"/>
+		<ref id="wall_glossy"/>
 	</shape>
 
 	<shape type="obj">
@@ -311,11 +311,11 @@
 			<scale z="1" y="1" x="0.65"/>
 		</transform>
 
-		<ref id="wall"/>
+		<ref id="wall_glossy"/>
 	</shape>
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_redwall.obj"/>
 
-		<ref id="wall"/>
+		<ref id="wall_glossy"/>
 	</shape>
 </scene>
