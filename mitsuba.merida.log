@@ -1,65 +1,696 @@
-2020-03-25 11:11:03 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-03-25 11:11:03 INFO  main [mitsuba.cpp:377] Parsing scene description from "moving-square-wall-half-glossy.xml" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/mlt.so" ..
-2020-03-25 11:11:03 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/moving-square-wall-half-glossy.xml" (near line 11): Unqueried attribute "rrDepth" in element "integrator"
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/sphere.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-03-25 11:11:03 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-03-25 11:11:03 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
-2020-03-25 11:11:03 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
-2020-03-25 11:11:03 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (13 primitives) ..
-2020-03-25 11:11:03 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
-2020-03-25 11:11:03 INFO  ren0 [MLT] Starting render job (150x150, 24 cores, SSE2 enabled, approx. 262144 mutations/pixel) ..
-2020-03-25 11:11:03 WARN  ren0 [MLT] Warning: increasing number of luminance samples to 294920
-2020-03-25 11:11:03 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
-2020-03-25 11:11:03 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
-2020-03-25 11:11:03 INFO  ren0 [SamplingIntegrator] Starting render job (150x150, 8 samples, 24 cores, SSE2 enabled) ..
-2020-03-25 11:23:22 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (294920 samples)..
-2020-03-25 11:23:25 INFO  ren0 [PathSampler] Done -- average luminance value = 0.079434, stddev = 0.983304 (took 3905 ms)
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:33:56 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:36:37 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:39:26 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:39:26 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:39:26 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:44:06 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:44:06 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-03-25 11:45:35 INFO  ren0 [RenderJob] Render time: 34.5324m
-2020-03-25 11:45:35 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/moving-square-wall-half-glossy.exr" ..
-2020-03-25 11:45:35 INFO  main [statistics.cpp:142] Statistics:
+2020-03-25 16:06:11 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-03-25 16:06:11 INFO  main [mitsuba.cpp:377] Parsing scene description from "cube-half-glossy-2.xml" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/mlt.so" ..
+2020-03-25 16:06:11 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/cube-half-glossy-2.xml" (near line 11): Unqueried attribute "rrDepth" in element "integrator"
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2020-03-25 16:06:11 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-03-25 16:06:11 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-03-25 16:06:11 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2020-03-25 16:06:11 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-03-25 16:06:11 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
+2020-03-25 16:06:11 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
+2020-03-25 16:06:11 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (182 primitives) ..
+2020-03-25 16:06:11 INFO  ren0 [KDTreeBase] Finished -- took 2 ms.
+2020-03-25 16:06:11 INFO  ren0 [MLT] Starting render job (150x150, 24 cores, SSE2 enabled, approx. 262144 mutations/pixel) ..
+2020-03-25 16:06:11 WARN  ren0 [MLT] Warning: increasing number of luminance samples to 294920
+2020-03-25 16:06:11 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
+2020-03-25 16:06:11 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2020-03-25 16:06:11 INFO  ren0 [SamplingIntegrator] Starting render job (150x150, 8 samples, 24 cores, SSE2 enabled) ..
+2020-03-25 16:16:22 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (294920 samples)..
+2020-03-25 16:16:25 INFO  ren0 [PathSampler] Done -- average luminance value = 0.017284, stddev = 0.846105 (took 3161 ms)
+2020-03-25 16:16:59 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:16:59 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:16:59 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:16:59 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:18:35 WARN  wrk23[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:13 WARN  wrk1 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:17 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:19:58 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:20:08 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:20:13 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:21:02 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:27 WARN  wrk1 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:42 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:43 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:51 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:51 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:52 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:52 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:55 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:22:55 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:17 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:17 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:28 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:24:41 WARN  wrk10[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:01 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:33 WARN  wrk23[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:45 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:25:45 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:12 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:15 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:30 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:35 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:35 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:37 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:45 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:45 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:26:45 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:27:08 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:04 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:04 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:47 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:47 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:47 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:47 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:47 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:28:47 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:01 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:01 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:01 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:01 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:37 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:37 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:37 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:37 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:29:37 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:30:31 WARN  wrk6 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:30:31 WARN  wrk6 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:30:31 WARN  wrk6 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:31:51 WARN  wrk17[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:22 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:48 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:48 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:34:48 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:35:46 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:36:10 WARN  wrk10[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:36:50 WARN  wrk10[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:14 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:15 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:46 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:46 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:46 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:46 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:37:46 WARN  wrk2 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:38:52 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:38:52 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:38:52 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:38:52 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:38:52 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:08 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:39:53 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:22 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:41:45 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:35 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:40 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:41 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:41 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:41 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:41 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:41 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:42:41 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:43:22 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:10 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:10 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:10 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:32 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:32 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:32 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:32 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:44:32 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:45:02 WARN  wrk12[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:45:15 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:46:04 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-03-25 16:46:38 INFO  ren0 [RenderJob] Render time: 40.4494m
+2020-03-25 16:46:38 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/cube-half-glossy-2.exr" ..
+2020-03-25 16:46:38 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
     -  plugins/area.so [Area light]
@@ -76,24 +707,23 @@
     -  plugins/perspective.so [Perspective camera]
     -  plugins/roughplastic.so [Rough plastic BRDF]
     -  plugins/shapegroup.so [Grouped geometry for instancing]
-    -  plugins/sphere.so [Sphere intersection primitive]
 
   * Bidirectional mutation :
-    -  Acceptance rate : 5.47 % (101.45 M of 1.86 G)
-    -  Successful generation rate : 9.45 % (175.29 M of 1.86 G)
+    -  Acceptance rate : 15.03 % (289.67 M of 1.93 G)
+    -  Successful generation rate : 33.54 % (646.52 M of 1.93 G)
 
   * Caustic perturbation :
-    -  Acceptance rate : 68.23 % (1.34 G of 1.97 G)
-    -  Successful generation rate : 75.48 % (1.48 G of 1.97 G)
+    -  Acceptance rate : 62.34 % (1.23 G of 1.97 G)
+    -  Successful generation rate : 76.04 % (1.49 G of 1.97 G)
 
   * General :
-    -  Normal rays traced : 9.933 G
-    -  Shadow rays traced : 6.255 G
+    -  Normal rays traced : 10.898 G
+    -  Shadow rays traced : 7.250 G
 
   * Lens perturbation :
-    -  Acceptance rate : 67.83 % (1.33 G of 1.97 G)
-    -  Successful generation rate : 76.12 % (1.50 G of 1.97 G)
+    -  Acceptance rate : 60.02 % (1.18 G of 1.97 G)
+    -  Successful generation rate : 74.38 % (1.46 G of 1.97 G)
 
   * Path Space MLT :
-    -  Accepted mutations : 47.07 % (2.78 G of 5.90 G)
+    -  Accepted mutations : 45.70 % (2.70 G of 5.90 G)
 ------------------------------------------------------------
