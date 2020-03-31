@@ -5,12 +5,14 @@
 	Edited by us to have an upside-down light source.
 -->
 <scene version="0.6.0">
-	<integrator type="mlt">
+	<!--<integrator type="mlt">
                 <integer name="luminanceSamples" value="262144"/>
 		<integer name="directSamples" value="524288"/>
 		<integer name="rrDepth" value="12"/>
+	</integrator>-->
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="10"/>
 	</integrator>
-
 	<sensor type="perspective">
 		<string name="fovAxis" value="smaller"/>
 		<float name="nearClip" value="10"/>
