@@ -147,7 +147,7 @@
 	<shape type="cube">
 		<transform name="toWorld">
 			<scale z="25" y="100" x="90"/>
-			<translate z="45" y="275" x="-90"/>
+			<translate z="46" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -212,7 +212,7 @@
 	<shape type="cube">
 		<transform name="toWorld">
 			<scale z="25" y="100" x="90"/>
-			<translate z="525" y="275" x="-90"/>
+			<translate z="524" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
