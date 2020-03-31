@@ -6,52 +6,52 @@
 
 <scene version="0.6.0">
 	<integrator type="mlt">
-		<integer name="directSamples" value="100000"/>
-		<integer name="luminanceSamples" value="100000"/>
+		<integer name="directSamples" value="524288"/>
+		<integer name="luminanceSamples" value="262144"/>
 		<integer name="rrDepth" value="12"/>
 	</integrator>
 
+
 	<sensor type="perspective">
+		<string name="fovAxis" value="smaller"/>
+		<float name="nearClip" value="10"/>
 		<float name="farClip" value="2800"/>
 		<float name="focusDistance" value="1000"/>
-		<float name="fov" value="39.3077"/>
-		<string name="fovAxis" value="x"/>
-		<float name="nearClip" value="10"/>
-		<float name="shutterClose" value="1"/>
-		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
 			<lookAt origin="278, 1373, 270" target="278, 1273, 271" up="0, 1, 0"/>
 		</transform>
+		<float name="fov" value="39.3077"/>
 
 		<sampler type="independent">
 			<integer name="sampleCount" value="262144"/>
 		</sampler>
-
+		<float name='shutterOpen' value='0'/>
+        <float name='shutterClose' value='1'/>
 		<film type="hdrfilm">
+			<integer name="width" value="300"/>
+			<integer name="height" value="300"/>
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="150"/>
-			<integer name="width" value="150"/>
 
 			<rfilter type="box"/>
 		</film>
 	</sensor>
 
-	<bsdf type="diffuse" id="wall">
+	<bsdf id="wall" type="diffuse">
 		<rgb name="reflectance" value="0.8,0.8,0.8"/>
 	</bsdf>
 
-	<bsdf type="roughplastic" id="wall_old2">
+	<bsdf id="wall_old2" type="roughplastic">
 		<rgb name="diffuseReflectance" value="0.8, 0.8, 0.8"/>
 	</bsdf>
 
-	<bsdf type="roughplastic" id="wall_glossy">
+	<bsdf id="wall_glossy" type="roughplastic">
 		<!--<rgb name="diffuseReflectance" value="0.07 0.09 0.13"/>-->
 		<spectrum name="specularReflectance" value="1"/>
 		<float name="intIOR" value="2"/>
 		<float name="alpha" value="0.05"/>
 	</bsdf>
 
-	<bsdf type="diffuse" id="light">
+	<bsdf id="light" type="diffuse">
 		<spectrum name="reflectance" value="400:0.78, 500:0.78, 600:0.78, 700:0.78"/>
 	</bsdf>
 	<shape type="obj">
@@ -102,8 +102,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="80" y="242"/>
+			<scale z="10" y="22" x="90"/>
+			<translate z="80" y="242" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -111,8 +111,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="80" y="308"/>
+			<scale z="10" y="22" x="90"/>
+			<translate z="80" y="308" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -120,8 +120,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="80" y="363"/>
+			<scale z="10" y="12" x="90"/>
+			<translate z="80" y="363" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -129,8 +129,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="80" y="187"/>
+			<scale z="10" y="12" x="90"/>
+			<translate z="80" y="187" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -138,8 +138,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="65" y="100"/>
-			<translate x="-90" z="155" y="275"/>
+			<scale z="65" y="100" x="90"/>
+			<translate z="155" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -147,8 +147,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="25" y="100"/>
-			<translate x="-90" z="46" y="275"/>
+			<scale z="25" y="100" x="90"/>
+			<translate z="46" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -156,27 +156,19 @@
 
 	<shape name="back_cube" type="cube">
 		<transform name="toWorld">
-			<scale x="10" z="100" y="100"/>
-			<translate x="-190" z="120" y="275"/>
+			<scale z="100" y="100" x="10"/>
+			<translate z="120" y="275" x="-190"/>
 		</transform>
 
 		<ref id="wall"/>
 	</shape>
-	<shape name="back_cube" type="cube">
-		<transform name="toWorld">
-			<scale x="100" z="100" y="10"/>
-			<translate x="-100" z="120" y="366"/>
-		</transform>
-		<ref id="wall"/>
-	</shape>
-	
 	<!-- cube 1 end -->
 	<!-- cube 2 start -->
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="490" y="242"/>
+			<scale z="10" y="22" x="90"/>
+			<translate z="490" y="242" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -184,8 +176,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="490" y="308"/>
+			<scale z="10" y="22" x="90"/>
+			<translate z="490" y="308" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -193,8 +185,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="490" y="363"/>
+			<scale z="10" y="12" x="90"/>
+			<translate z="490" y="363" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -202,8 +194,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="490" y="187"/>
+			<scale z="10" y="12" x="90"/>
+			<translate z="490" y="187" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -211,8 +203,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="65" y="100"/>
-			<translate x="-90" z="415" y="275"/>
+			<scale z="65" y="100" x="90"/>
+			<translate z="415" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -220,8 +212,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="25" y="100"/>
-			<translate x="-90" z="524" y="275"/>
+			<scale z="25" y="100" x="90"/>
+			<translate z="524" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -229,46 +221,36 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="10" z="100" y="100"/>
-			<translate x="-190" z="450" y="275"/>
+			<scale z="100" y="100" x="10"/>
+			<translate z="450" y="275" x="-190"/>
 		</transform>
 
-		<ref id="wall"/>
-	</shape>
-	
-	<shape name="back_cube" type="cube">
-		<transform name="toWorld">
-			<scale x="100" z="100" y="10"/>
-			<translate x="-100" z="450" y="366"/>
-		</transform>
 		<ref id="wall"/>
 	</shape>
 	<!-- cube 2 end -->
-
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-10" z="490" y="275"/>
+				<scale z="50" y="98" x="10"/>
+				<translate z="490" y="275" x="-10"/>
 			</transform>
 			<transform time="1">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-10" z="420" y="275"/>
+				<scale z="50" y="98" x="10"/>
+				<translate z="420" y="275" x="-10"/>
 			</transform>
 		</animation>
 
 		<ref id="wall"/>
 	</shape>
-
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-10" z="150" y="275"/>
+				<scale z="50" y="98" x="10"/>
+				<translate z="150" y="275" x="-10"/>
 			</transform>
 			<transform time="1">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-10" z="80" y="275"/>
+				<scale z="50" y="98" x="10"/>
+				<translate z="80" y="275" x="-10"/>
 			</transform>
 		</animation>
 
@@ -287,6 +269,7 @@
 
 		<ref id="wall"/>
 	</shape>-->
+
 	<!--<shape type="obj">
 		<string name="filename" value="meshes/cube_holes_half2.obj"/>
 
@@ -304,8 +287,8 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_floor.obj"/>
 		<transform name="toWorld">
-			<translate x="300" z="0" y="0"/>
-			<scale x="0.65" z="1" y="1"/>
+			<translate z="0" y="0" x="300"/>
+			<scale z="1" y="1" x="0.65"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -314,8 +297,8 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
-			<translate x="300" z="0" y="0"/>
-			<scale x="0.65" z="1" y="1"/>
+			<translate z="0" y="0" x="300"/>
+			<scale z="1" y="1" x="0.65"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -324,14 +307,13 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
-			<rotate angle="180" y="1"/>
-			<translate x="855" z="565" y="0"/>
-			<scale x="0.65" z="1" y="1"/>
+			<rotate y="1" angle="180"/>
+			<translate z="565" y="0" x="855"/>
+			<scale z="1" y="1" x="0.65"/>
 		</transform>
 
 		<ref id="wall"/>
 	</shape>
-
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_redwall.obj"/>
 
