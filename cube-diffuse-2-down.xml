@@ -247,7 +247,7 @@
 		<animation name="toWorld">
 			<transform time="0">
 				<scale x="10" z="50" y="98"/>
-				<translate x="-11" z="490" y="275"/>
+				<translate x="-11" z="420" y="275"/>
 			</transform>
 		</animation>
 
@@ -258,7 +258,7 @@
 		<animation name="toWorld">
 			<transform time="0">
 				<scale x="10" z="50" y="98"/>
-				<translate x="-11" z="150" y="275"/>
+				<translate x="-11" z="80" y="275"/>
 			</transform>
 		</animation>
 
