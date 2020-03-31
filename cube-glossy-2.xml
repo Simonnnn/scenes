@@ -6,8 +6,8 @@
 
 <scene version="0.6.0">
 	<integrator type="mlt">
-		<integer name="directSamples" value="262144"/>
-		<integer name="rrDepth" value="10"/>
+		<integer name="directSamples" value="524288"/>
+		<integer name="rrDepth" value="12"/>
 	</integrator>
 
 

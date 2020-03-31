@@ -6,8 +6,9 @@
 
 <scene version="0.6.0">
 	<integrator type="mlt">
-		<integer name="directSamples" value="262144"/>
-		<integer name="rrDepth" value="10"/>
+		<integer name="directSamples" value="524288"/>
+		<integer name="luminanceSamples" value="262144"/>
+		<integer name="rrDepth" value="12"/>
 	</integrator>
 
 
@@ -147,7 +148,7 @@
 	<shape type="cube">
 		<transform name="toWorld">
 			<scale z="25" y="100" x="90"/>
-			<translate z="45" y="275" x="-90"/>
+			<translate z="46" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -212,7 +213,7 @@
 	<shape type="cube">
 		<transform name="toWorld">
 			<scale z="25" y="100" x="90"/>
-			<translate z="525" y="275" x="-90"/>
+			<translate z="524" y="275" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
