@@ -24,7 +24,7 @@
 		<float name="fov" value="39.3077"/>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="524288"/>
+			<integer name="sampleCount" value="35000"/>
 		</sampler>
 		<float name='shutterOpen' value='0'/>
         <float name='shutterClose' value='2'/>
