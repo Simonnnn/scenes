@@ -25,8 +25,6 @@
 		<sampler type="independent">
 			<integer name="sampleCount" value="262144"/>
 		</sampler>
-		<float name='shutterOpen' value='0'/>
-        <float name='shutterClose' value='1'/>
 		<film type="hdrfilm">
 			<integer name="width" value="300"/>
 			<integer name="height" value="300"/>
