@@ -23,7 +23,7 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="524288"/>
+			<integer name="sampleCount" value="25000"/>
 		</sampler>
 
 		<film type="hdrfilm">
