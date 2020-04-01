@@ -1,2 +1,2 @@
-mitsuba cube-diffuse-2-down.xml
-mitsuba cube-diffuse-2-up.xml
+mitsuba moving-square-wall-glossy.xml
+mitsuba moving-square-wall-glossy.big.xml
