@@ -1,29 +1,29 @@
-2020-04-10 15:44:34 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-04-10 15:44:34 INFO  main [mitsuba.cpp:377] Parsing scene description from "like_kitchen.xml" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/sunsky.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/sky.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/envmap.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
-2020-04-10 15:44:34 INFO  main [EnvironmentMap] Precomputing data structures for environment map sampling (515.0 KiB)
-2020-04-10 15:44:34 INFO  main [EnvironmentMap] Done (took 1 ms)
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/twosided.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-04-10 15:44:34 INFO  main [PluginManager] Loading plugin "plugins/rectangle.so" ..
-2020-04-10 15:44:34 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (233 primitives) ..
-2020-04-10 15:44:34 INFO  ren0 [KDTreeBase] Finished -- took 4 ms.
-2020-04-10 15:44:34 INFO  ren0 [PluginManager] Loading plugin "plugins/sphere.so" ..
-2020-04-10 15:44:34 INFO  ren0 [BDPTIntegrator] Starting render job (350x250, 25000 samples, 24 cores, SSE2 enabled) ..
-2020-04-10 17:14:53 INFO  ren0 [RenderJob] Render time: 1.5052h
-2020-04-10 17:14:53 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/like_kitchen.exr" ..
-2020-04-10 17:14:53 INFO  main [statistics.cpp:142] Statistics:
+2020-04-11 11:48:07 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-04-11 11:48:07 INFO  main [mitsuba.cpp:377] Parsing scene description from "like_kitchen.xml" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/sunsky.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/sky.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/envmap.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
+2020-04-11 11:48:07 INFO  main [EnvironmentMap] Precomputing data structures for environment map sampling (515.0 KiB)
+2020-04-11 11:48:07 INFO  main [EnvironmentMap] Done (took 1 ms)
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/twosided.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-04-11 11:48:07 INFO  main [PluginManager] Loading plugin "plugins/rectangle.so" ..
+2020-04-11 11:48:07 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (233 primitives) ..
+2020-04-11 11:48:07 INFO  ren0 [KDTreeBase] Finished -- took 3 ms.
+2020-04-11 11:48:07 INFO  ren0 [PluginManager] Loading plugin "plugins/sphere.so" ..
+2020-04-11 11:48:07 INFO  ren0 [BDPTIntegrator] Starting render job (350x250, 25000 samples, 24 cores, SSE2 enabled) ..
+2020-04-11 13:21:51 INFO  ren0 [RenderJob] Render time: 1.5624h
+2020-04-11 13:21:51 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/like_kitchen.exr" ..
+2020-04-11 13:21:51 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
     -  plugins/bdpt.so [Bidirectional path tracer]
@@ -44,9 +44,9 @@
     -  plugins/twosided.so [Two-sided BRDF adapter]
 
   * General :
-    -  Normal rays traced : 52.796 G
+    -  Normal rays traced : 52.794 G
 
   * Texture system :
     -  Cumulative MIP map memory allocations : 1 MiB
-    -  Filtered texture lookups : 0.00 % (0.00 of 37.37 G)
+    -  Filtered texture lookups : 0.00 % (0.00 of 37.36 G)
 ------------------------------------------------------------
