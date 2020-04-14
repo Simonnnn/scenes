@@ -5,7 +5,8 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="bdpt">
+	<integrator type="mlt">
+		<integer name="directSamples" value="32768"/>
 		<integer name="rrDepth" value="10"/>
 	</integrator>
 
@@ -21,7 +22,7 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="25000"/>
+			<integer name="sampleCount" value="32768"/>
 		</sampler>
 
 		<film type="hdrfilm">
