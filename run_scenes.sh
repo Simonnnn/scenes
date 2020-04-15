@@ -1,2 +1,2 @@
-mitsuba moving-square-wall-glossy.xml
-mitsuba moving-square-wall-glossy.big.xml
+mitsuba like_pool.xml
+mitsuba like_kitchen.xml
