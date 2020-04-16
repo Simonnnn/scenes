@@ -27,8 +27,8 @@
 
 		<film type="hdrfilm">
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="250"/>
-			<integer name="width" value="350"/>
+			<integer name="height" value="650"/>
+			<integer name="width" value="750"/>
 
 			<rfilter type="box"/>
 		</film>
@@ -43,6 +43,7 @@
 		<float name="hour" value="8.5"/>
 		<float name="turbidity" value="5"/>
 		<float name="sunRadiusScale" value="4"/>
+		<float name="scale" value="2"/>
 	</emitter>
 	<!--<sensor type="perspective">
 		<float name="farClip" value="280"/>
@@ -124,65 +125,91 @@
 		<float name="alpha" value="0.05"/>
 	</bsdf>
 	<!-- table -->
+	<!-- level 1 -->
 	<!-- obj 3 -->
-
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale z="10" x="8" y="10"/>
-			<translate z="60" x="30" y="0"/>
+			<scale z="15" x="10" y="10"/>
+			<translate z="59" x="32" y="0"/>
 		</transform>
-
-		<ref id="CookerBlack"/>
-	</shape>
-	<!-- level 2 -->
-	<shape type="cube">
-		<transform name="toWorld">
-			<scale z="5" x="6" y="4"/>
-			<translate z="65" x="38" y="14"/>
-		</transform>
-
-		<ref id="glossy"/>
+		<ref id="CookerGlass"/>
 	</shape>
 	
 	<!-- obj 2 -->
-
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale z="10" x="10" y="10"/>
-			<translate z="60" x="48" y="0"/>
+			<scale z="15" x="8" y="10"/>
+			<translate z="59" x="50" y="0"/>
 		</transform>
-
-		<ref id="CookerGlass"/>
-	</shape>
-	<!-- level 2 -->
-	<shape type="cube">
-		<transform name="toWorld">
-			<scale z="5" x="4" y="4"/>
-			<translate z="65" x="55" y="14"/>
-		</transform>
-
 		<ref id="CookerBlack"/>
 	</shape>
+	
+	
 	<!-- obj 1 -->
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale z="10" x="8" y="10"/>
-			<translate z="60" x="66" y="0"/>
+			<scale z="15" x="8" y="10"/>
+			<translate z="59" x="66" y="0"/>
 		</transform>
 
 		<ref id="brown"/>
-	</shape>
+	</shape>	
 	<!-- level 2 -->
+	
+	<!-- obj 1 -->
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale z="5" x="4" y="4"/>
-			<translate z="60" x="70" y="14"/>
+			<scale z="15" x="6" y="7"/>
+			<translate z="59" x="68" y="17"/>
+		</transform>
+
+		<ref id="CookerBlack"/>
+	</shape>
+	
+	
+	<!-- obj 2 -->
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="8" y="4"/>
+			<translate z="59" x="54" y="14"/>
 		</transform>
 
 		<ref id="mat_glass"/>
 	</shape>
 
+	<!-- obj 3 -->
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="7"/>
+			<translate z="59" x="40" y="17"/>
+		</transform>
+
+		<ref id="glossy"/>
+	</shape>
+	
+	<!-- obj 4 -->
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="4"/>
+			<translate z="59" x="28" y="14"/>
+		</transform>
+
+		<ref id="brown"/>
+	</shape>
+
+	<!-- level 3 -->
+	
+	<!-- obj 2 -->
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="3"/>
+			<translate z="59" x="28" y="21"/>
+		</transform>
+
+		<ref id="mat_glass"/>
+	</shape>
+	
 	<!-- table blad -->
 
 	<shape type="cube">
