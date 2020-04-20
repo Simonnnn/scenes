@@ -1,88 +1,101 @@
-2020-04-15 12:11:07 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-04-15 12:11:07 INFO  main [mitsuba.cpp:377] Parsing scene description from "like_kitchen.xml" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/mlt.so" ..
-2020-04-15 12:11:07 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/like_kitchen.xml" (near line 11): Unqueried attribute "rrDepth" in element "integrator"
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/sunsky.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/sky.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/envmap.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
-2020-04-15 12:11:07 INFO  main [EnvironmentMap] Precomputing data structures for environment map sampling (515.0 KiB)
-2020-04-15 12:11:07 INFO  main [EnvironmentMap] Done (took 1 ms)
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/twosided.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
-2020-04-15 12:11:07 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-04-15 12:11:08 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/like_kitchen.xml" (near line 125): Unqueried attribute "alpha" in element "bsdf"
-2020-04-15 12:11:08 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-04-15 12:11:08 INFO  main [PluginManager] Loading plugin "plugins/rectangle.so" ..
-2020-04-15 12:11:08 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (269 primitives) ..
-2020-04-15 12:11:08 INFO  ren0 [KDTreeBase] Finished -- took 5 ms.
-2020-04-15 12:11:08 INFO  ren0 [PluginManager] Loading plugin "plugins/sphere.so" ..
-2020-04-15 12:11:08 INFO  ren0 [MLT] Starting render job (350x250, 24 cores, SSE2 enabled, approx. 32768 mutations/pixel) ..
-2020-04-15 12:11:08 WARN  ren0 [MLT] Warning: increasing number of luminance samples to 143360
-2020-04-15 12:11:08 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
-2020-04-15 12:11:08 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
-2020-04-15 12:11:08 INFO  ren0 [SamplingIntegrator] Starting render job (350x250, 8 samples, 24 cores, SSE2 enabled) ..
-2020-04-15 12:14:38 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (143360 samples)..
-2020-04-15 12:14:40 INFO  ren0 [PathSampler] Done -- average luminance value = 0.015889, stddev = 0.942869 (took 2527 ms)
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:15:14 WARN  wrk0 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:17:43 WARN  wrk4 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:18:01 WARN  wrk3 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:21:44 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:21:44 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:25:07 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:25:07 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:25:07 WARN  wrk15[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:27:24 WARN  wrk1 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:27:24 WARN  wrk1 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:27:50 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:27:50 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:27:50 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:27:50 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:28:20 WARN  wrk9 [BidirectionalMutator] Internal error: luminance = 0.000000!
-2020-04-15 12:30:33 INFO  ren0 [RenderJob] Render time: 19.4266m
-2020-04-15 12:30:33 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/like_kitchen.exr" ..
-2020-04-15 12:30:33 INFO  main [statistics.cpp:142] Statistics:
+2020-04-16 10:39:06 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-04-16 10:39:06 INFO  main [mitsuba.cpp:377] Parsing scene description from "like_kitchen.xml" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/mlt.so" ..
+2020-04-16 10:39:06 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/like_kitchen.xml" (near line 11): Unqueried attribute "rrDepth" in element "integrator"
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/sunsky.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/sky.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/envmap.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
+2020-04-16 10:39:06 INFO  main [EnvironmentMap] Precomputing data structures for environment map sampling (515.0 KiB)
+2020-04-16 10:39:06 INFO  main [EnvironmentMap] Done (took 1 ms)
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/twosided.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-04-16 10:39:06 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/like_kitchen.xml" (near line 126): Unqueried attribute "alpha" in element "bsdf"
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-04-16 10:39:06 INFO  main [PluginManager] Loading plugin "plugins/rectangle.so" ..
+2020-04-16 10:39:06 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (293 primitives) ..
+2020-04-16 10:39:06 INFO  ren0 [KDTreeBase] Finished -- took 5 ms.
+2020-04-16 10:39:06 INFO  ren0 [PluginManager] Loading plugin "plugins/sphere.so" ..
+2020-04-16 10:39:06 INFO  ren0 [MLT] Starting render job (750x650, 24 cores, SSE2 enabled, approx. 32768 mutations/pixel) ..
+2020-04-16 10:39:06 WARN  ren0 [MLT] Warning: increasing number of luminance samples to 798720
+2020-04-16 10:39:06 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
+2020-04-16 10:39:06 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2020-04-16 10:39:06 INFO  ren0 [SamplingIntegrator] Starting render job (750x650, 8 samples, 24 cores, SSE2 enabled) ..
+2020-04-16 10:56:57 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (798720 samples)..
+2020-04-16 10:57:11 INFO  ren0 [PathSampler] Done -- average luminance value = 0.046024, stddev = 3.475577 (took 13785 ms)
+2020-04-16 10:59:31 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 10:59:31 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:02:35 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:02:35 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:02:35 WARN  wrk22[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:06:02 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:06:02 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:06:02 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:06:02 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:06:02 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:13:21 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:13:21 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:13:21 WARN  wrk7 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:21:25 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:21:25 WARN  wrk16[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:32:27 WARN  wrk4 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:34:55 WARN  wrk6 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:34:55 WARN  wrk6 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:36:25 WARN  wrk8 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:37:21 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:37:21 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:37:47 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:37:47 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:37:47 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:37:47 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:28 WARN  wrk13[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:45:45 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:48:54 WARN  wrk17[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:48:54 WARN  wrk17[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:53:09 WARN  wrk14[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:53:41 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 11:53:41 WARN  wrk18[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:07:07 WARN  wrk10[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:16:35 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:16:35 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:16:35 WARN  wrk5 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:19:24 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:19:24 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:19:24 WARN  wrk21[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:20:11 WARN  wrk3 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:20:11 WARN  wrk3 [BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:29:37 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:29:37 WARN  wrk19[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:33:16 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:40 WARN  wrk11[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:48 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:35:48 WARN  wrk20[BidirectionalMutator] Internal error: luminance = 0.000000!
+2020-04-16 12:36:31 INFO  ren0 [RenderJob] Render time: 1.9570h
+2020-04-16 12:36:31 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/like_kitchen.exr" ..
+2020-04-16 12:36:31 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
     -  plugins/box.so [Box filter]
@@ -105,30 +118,30 @@
     -  plugins/twosided.so [Two-sided BRDF adapter]
 
   * Bidirectional mutation :
-    -  Acceptance rate : 6.40 % (56.51 M of 882.26 M)
-    -  Successful generation rate : 18.44 % (162.71 M of 882.26 M)
+    -  Acceptance rate : 4.82 % (202.03 M of 4.19 G)
+    -  Successful generation rate : 14.66 % (614.07 M of 4.19 G)
 
   * Caustic perturbation :
-    -  Acceptance rate : 77.45 % (320.85 M of 414.24 M)
-    -  Successful generation rate : 81.75 % (338.65 M of 414.24 M)
+    -  Acceptance rate : 76.88 % (2.30 G of 2.99 G)
+    -  Successful generation rate : 82.45 % (2.46 G of 2.99 G)
 
   * General :
-    -  Normal rays traced : 9.016 G
-    -  Shadow rays traced : 3.165 G
+    -  Normal rays traced : 52.955 G
+    -  Shadow rays traced : 16.165 G
 
   * Lens perturbation :
-    -  Acceptance rate : 75.32 % (512.95 M of 681.00 M)
-    -  Successful generation rate : 80.42 % (547.64 M of 681.00 M)
+    -  Acceptance rate : 77.26 % (1.85 G of 2.39 G)
+    -  Successful generation rate : 81.83 % (1.96 G of 2.39 G)
 
   * Multi-chain perturbation :
-    -  Acceptance rate : 71.78 % (391.53 M of 545.45 M)
-    -  Successful generation rate : 72.70 % (396.52 M of 545.45 M)
+    -  Acceptance rate : 74.83 % (3.07 G of 4.10 G)
+    -  Successful generation rate : 75.62 % (3.10 G of 4.10 G)
 
   * Path Space MLT :
-    -  Accepted mutations : 44.71 % (1.28 G of 2.87 G)
+    -  Accepted mutations : 46.42 % (7.42 G of 15.97 G)
 
   * Texture system :
     -  Cumulative MIP map memory allocations : 1 MiB
-    -  Filtered texture lookups : 0.00 % (48.76 K of 4.65 G)
-    -  Lookups with clamped anisotropy : 0.00 % (0.00 of 48.76 K)
+    -  Filtered texture lookups : 0.00 % (262.58 K of 28.50 G)
+    -  Lookups with clamped anisotropy : 0.00 % (0.00 of 262.58 K)
 ------------------------------------------------------------
