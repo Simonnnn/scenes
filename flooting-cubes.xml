@@ -5,11 +5,8 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="guided_path_tom">
-		<string name="bsdfSamplingFractionLoss" value="kl"/>
-		<string name="directionalFilter" value="box"/>
-		<integer name="rrDepth" value="10"/>
-		<string name="sampleCombination" value="inversevar"/>
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="12"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -22,11 +19,11 @@
 		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
 
-			<lookat origin="117.032, 94.6934, -85.8009" target="116.464, 94.2578, -85.1025" up="-0.281744, 0.900109, 0.332302"/>
+			<lookat origin="117.032, 94.6934, -85.8009" target="116.464, 94.2578, -85.1025" up="-0.281731, 0.900119, 0.332285"/>
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="256"/>
+			<integer name="sampleCount" value="262144"/>
 		</sampler>
 
 		<film type="hdrfilm">
@@ -77,7 +74,6 @@
 		<rgb name="diffuseReflectance" value="0.8,0.8,0.8"/>
 		<float name="intIOR" value="1.9"/>
 	</bsdf>
-
 	<!--<emitter type="spot">
 		<transform name="toWorld">
 			
@@ -88,7 +84,7 @@
 		<spectrum name="intensity" value="20000"/>
 		<float name="samplingWeight" value="200"/>
 	</emitter>-->
-	
+
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_luminaire.obj"/>
 		<transform name="toWorld">
