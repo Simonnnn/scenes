@@ -5,8 +5,9 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="bdpt">
-		<integer name="rrDepth" value="12"/>
+	<integrator type="mlt">
+		<integer name="directSamples" value="32768"/>
+		<integer name="rrDepth" value="10"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -23,7 +24,7 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="262144"/>
+			<integer name="sampleCount" value="32768"/>
 		</sampler>
 
 		<film type="hdrfilm">
