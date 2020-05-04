@@ -1,0 +1,395 @@
+[33mcommit 052356dc9deb5e8839222e279510ad0928e9e386[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Thu Apr 30 10:40:08 2020 +0200
+
+    lets use mlt because bdrt doesnt work good
+
+[33mcommit 105f53ab48c1971c4562fa57a764d7c2c72e209e[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Thu Apr 30 10:35:06 2020 +0200
+
+    aasd
+
+[33mcommit a9bb9b1b3396ee814faa7111c7a434ae72bb90e1[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Wed Apr 29 18:22:58 2020 +0200
+
+    changed integrator
+
+[33mcommit 9532b13470fe060cddb77580e0991c04e459321c[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Wed Apr 29 18:20:09 2020 +0200
+
+    added cube scene
+
+[33mcommit e00aff8192e2d42750f722d87e45eb66ae786a0e[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Wed Apr 29 15:05:13 2020 +0200
+
+    qsdfsss
+
+[33mcommit f5fab5885682f997c0210a68ffad18d73bee6c3f[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Apr 28 18:33:42 2020 +0200
+
+    added scenes
+
+[33mcommit e78c5cab0a866a8fdbd6e84799248bcc92e8a405[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Apr 28 17:49:35 2020 +0200
+
+    dubbel samples
+
+[33mcommit f8418efe54dd6649300915561d2761721e6fcb8c[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Apr 28 17:42:07 2020 +0200
+
+    asdfasdf
+
+[33mcommit e573900a67e1a384e5d7915755a685c9723183ed[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Apr 27 19:52:05 2020 +0200
+
+    more samples
+
+[33mcommit fad07a23711c37d03076b2211193b308aca0a96a[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Mon Apr 27 19:49:20 2020 +0200
+
+    asdfasdf
+
+[33mcommit bc302836be9cfbc569a28a5f6e78c07c8807c5be[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Apr 27 18:05:26 2020 +0200
+
+    bdrt intergrator now
+
+[33mcommit 5064db4a38fa5ffd6e73193d372b016d7afedaa7[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Mon Apr 20 10:02:21 2020 +0200
+
+    asdf
+
+[33mcommit 9b135d42fec96ecd98a9eddde07c9f1a35e009bf[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Thu Apr 16 10:38:58 2020 +0200
+
+    adjusted kitchen again
+
+[33mcommit fe206b6031a2ea94c42b56ac1b90a85b2928aa43[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Wed Apr 15 19:32:15 2020 +0200
+
+    safaaa
+
+[33mcommit 191f9951e5e6f1517aac73a213f38667e104eb21[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Wed Apr 15 11:49:48 2020 +0200
+
+    big adjustens to scenes
+
+[33mcommit 18d948815058a73851d907c986da0eed6ce299cb[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Wed Apr 15 10:37:33 2020 +0200
+
+    asdfasdf
+
+[33mcommit 55dfc02d2d6696ff1afa9688098e05dd9e2296cd[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Apr 14 15:44:18 2020 +0200
+
+    added scene
+
+[33mcommit 1ae02e5c18c24f663e507ae771ecdf293aba54a7[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Apr 14 13:53:59 2020 +0200
+
+    asdfasdfasd
+
+[33mcommit d4608f62459c242712feae4c1ece4ac68d7a984c[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Apr 13 10:36:36 2020 +0200
+
+    asdfd
+
+[33mcommit c8ffa7c2a5860948e5fb6c3c1945d36aac03a0ed[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Sat Apr 11 16:41:33 2020 +0200
+
+    asdfas
+
+[33mcommit c64a789e65416e600e8c24473033d7e0b53658b4[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Sat Apr 11 11:44:54 2020 +0200
+
+    hjlk
+
+[33mcommit 28488fd1fcdb3ffd404926e88d20836a39eeb65c[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Sat Apr 11 11:33:45 2020 +0200
+
+    sadf
+
+[33mcommit e37dd28ba049410139b38901bb2aab44459a5ea7[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Fri Apr 10 15:43:32 2020 +0200
+
+    added new scene
+
+[33mcommit 6e8c5398531a8fd9dce3239bccb95fa96854cc9b[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Wed Apr 1 13:49:43 2020 +0200
+
+    big
+
+[33mcommit e9c0d05b2c1c23beb7409d664f593bcd8867c0ce[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Wed Apr 1 09:42:17 2020 +0200
+
+    lets see
+
+[33mcommit db868d96f31a7350e3ea6279ea73c0d9f672f449[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 23:09:34 2020 +0200
+
+    also glossy
+
+[33mcommit 16b3ccfc8aff83fd669367a4605ec84755ade421[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 23:08:08 2020 +0200
+
+    tessa
+
+[33mcommit 2de46b61164b362c62deb61a9d567a3e6ad3107b[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 20:44:31 2020 +0200
+
+    try bdpt
+
+[33mcommit d7b33d263c60bcf9e180876fd798a4c5d515083a[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 20:32:31 2020 +0200
+
+    bigger scene moving
+
+[33mcommit 570e9c9807ab9997084e583cabbd7e38bdcc8651[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Mar 31 19:54:48 2020 +0200
+
+    done
+
+[33mcommit c3adf90163d6da0d13445594bea47e3a15d172d4[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 14:37:16 2020 +0200
+
+    added both time lines
+
+[33mcommit 5382ad93779b73ad8876899942523f9388d12b8e[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Mar 31 14:29:35 2020 +0200
+
+    other lines fixed to?
+
+[33mcommit c7828ce5b5e7afb92d011172094b4b23f7c01766[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 13:39:13 2020 +0200
+
+    one line fixed now the others !!
+
+[33mcommit 59211db30213ad3b2c2fe4a0c9d3a0973949d552[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Mar 31 13:32:44 2020 +0200
+
+    line gone?
+
+[33mcommit fbc67d5544d741fab7c4965edfa9cfd353f3be89[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 13:03:00 2020 +0200
+
+    fixed cube scene hopefully
+
+[33mcommit 78ecca8b92be7fa3db9bde6efbbe8d5cafa8cb9e[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Mar 31 12:32:29 2020 +0200
+
+    hopefully better
+
+[33mcommit 72f80516f36398618e4b9c25e20009e911425924[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 11:15:03 2020 +0200
+
+    update diffuse scene
+
+[33mcommit 836a2c8ccdbd4267448463285377742a575e0fbe[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 31 11:04:16 2020 +0200
+
+    fixed geometric bug
+
+[33mcommit fc22fc41189ea349ec16bbc932bcb50da1abed4d[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Mon Mar 30 09:42:32 2020 +0200
+
+    a
+
+[33mcommit f636a6502d6ebdc5669aeffc75a5bb48c3747310[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Wed Mar 25 14:02:48 2020 +0100
+
+    fixed cube scene
+
+[33mcommit e12247d02e917748a9244e75dc3e14686e901e8c[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Wed Mar 25 14:01:47 2020 +0100
+
+    now with shutter open
+
+[33mcommit 5d515f8ada1bcdaca9fafa1c5779cd42ef977ebe[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Tue Mar 24 15:43:05 2020 +0100
+
+    forgot the add shutter time
+
+[33mcommit da6744b359060a29b62183f1229c06096bcf345b[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Tue Mar 24 09:35:25 2020 +0100
+
+    sceness
+
+[33mcommit 7748300fe7c57436908569124d2df8a4bc66bbcf[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Mar 23 15:39:22 2020 +0100
+
+    fixed scenes
+
+[33mcommit 49a64b86536ad21ff05ec2c5a84d7d6c7eeef869[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Mon Mar 23 15:35:03 2020 +0100
+
+    some
+
+[33mcommit e91916bc1520ed159e0194498be1b85d0a226360[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Mar 23 14:50:32 2020 +0100
+
+    added scenes, lowered the resolution
+
+[33mcommit 71f835cf409c7e6ad62e43046f4721bbd8c70af9[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Mon Mar 23 10:13:54 2020 +0100
+
+    torus scene GT
+
+[33mcommit d4b94b6dbef4b0a0e0581b64f296342c6f45b488[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Mar 23 08:57:16 2020 +0100
+
+    added torus scene
+
+[33mcommit b971f35636d865b7ba44f83d72320e2201fe6797[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Mon Mar 23 08:55:02 2020 +0100
+
+    264k
+
+[33mcommit 2eec4bbbe4476fbf8c27af8b71251c6e08635014[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Mon Mar 23 08:52:00 2020 +0100
+
+    mlt 100k
+
+[33mcommit abcd24ac32dc7939be554907f1a07c7ea09b40a9[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Sun Mar 22 22:47:33 2020 +0100
+
+    power of 2
+
+[33mcommit 764e7e19c6d626b2025994cb03974ac188fa6ff6[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Sun Mar 22 22:43:50 2020 +0100
+
+    lets try 100k
+
+[33mcommit 7bd50fe6ca7ece60db02893e1ff02701c90275eb[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Sun Mar 22 22:35:33 2020 +0100
+
+    more direct samples
+
+[33mcommit 021c804879c8d8098818c4f144e23bcd34c9c329[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Sun Mar 22 20:13:21 2020 +0100
+
+    10k direct samples
+
+[33mcommit eef9df4c224e4fc35e883b26010aae43ce24c524[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Sun Mar 22 20:10:21 2020 +0100
+
+    more direct samples
+
+[33mcommit 5aec8e6b91eec7aa1862dacc26a7aaf6c83b5b3a[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Sun Mar 22 18:28:58 2020 +0100
+
+    sppmlt with more direcect samples
+
+[33mcommit 1197c9ca2bb2501d5306ef2365f08226f0f36281[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Sun Mar 22 18:14:16 2020 +0100
+
+    spmlt
+
+[33mcommit 02eb07d23d99e8716b7e8c48619824935bdc0db1[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Sat Mar 21 11:04:00 2020 +0100
+
+    changed scene to space path MLT
+
+[33mcommit e4d9514f9c2fbd32b3b5835180ee4b0a6982ddf1[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Sat Mar 21 10:45:45 2020 +0100
+
+    scene rendered
+
+[33mcommit 973cf25993733a8c097fdb5c545d992329bf183d[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Fri Mar 20 16:56:34 2020 +0100
+
+    added scene
+
+[33mcommit 3b7ac2ee03b95f9ca25e91b7c9821090d6bd3f46[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Fri Mar 20 16:12:26 2020 +0100
+
+    first png
+
+[33mcommit d98ca3a037edde19d5ea096310c4b33f8cb8f1cc[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Fri Mar 20 16:09:44 2020 +0100
+
+    first img
+
+[33mcommit 1b7b7cde5fcbe1db3a3ec5b8aab6e862d4431d37[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Fri Mar 20 15:59:34 2020 +0100
+
+    updated scene to mitsuba 0.6
+
+[33mcommit 3f0fa2e22c963775c557bd93a7350f00e121c4a1[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Fri Mar 20 15:56:52 2020 +0100
+
+    removed zip
+
+[33mcommit 0ca2b9777245b490a85e5fc443431ee4d1253f99[m
+Author: Simon Geelen <simon@merida.cs.kuleuven.be>
+Date:   Fri Mar 20 15:54:50 2020 +0100
+
+    unzip file
+
+[33mcommit 5d213ed5dbbc5ba209bcfb80c1000a94e136e86b[m
+Author: Simonnnnn <simon.geelen@hotmail.com>
+Date:   Fri Mar 20 15:51:26 2020 +0100
+
+    car scene
