@@ -22,7 +22,7 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="131072"/>
+			<integer name="sampleCount" value="524288"/>
 		</sampler>
 
 		<film type="hdrfilm">
@@ -56,7 +56,7 @@
 		</film>
 	</sensor>-->
 
-	<emitter type="sunsky">
+	<emitter type="sun">
 		<transform name="toWorld">
 			<rotate x="1" angle="-30"/>
 			<rotate angle="30" z="1"/>

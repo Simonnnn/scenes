@@ -5,9 +5,9 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="mlt">
-		<integer name="directSamples" value="32768"/>
+	<integrator type="volpath">
 		<integer name="rrDepth" value="10"/>
+		<boolean name="strictNormals" value="true"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -22,13 +22,13 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="32768"/>
+			<integer name="sampleCount" value="524288"/>
 		</sampler>
 
 		<film type="hdrfilm">
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="650"/>
-			<integer name="width" value="750"/>
+			<integer name="height" value="350"/>
+			<integer name="width" value="350"/>
 
 			<rfilter type="box"/>
 		</film>

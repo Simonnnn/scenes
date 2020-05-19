@@ -5,8 +5,9 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="bdpt">
+	<integrator type="volpath">
 		<integer name="rrDepth" value="10"/>
+		<boolean name="strictNormals" value="true"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -55,7 +56,7 @@
 		</film>
 	</sensor>-->
 
-	<emitter type="sunsky">
+	<emitter type="sun">
 		<transform name="toWorld">
 			<rotate angle="-30" x="1"/>
 			<rotate z="1" angle="30"/>
