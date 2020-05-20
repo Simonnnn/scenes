@@ -5,9 +5,8 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="volpath">
+	<integrator type="bdpt">
 		<integer name="rrDepth" value="10"/>
-		<boolean name="strictNormals" value="true"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -22,7 +21,7 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="524288"/>
+			<integer name="sampleCount" value="65536"/>
 		</sampler>
 
 		<film type="hdrfilm">
@@ -58,9 +57,9 @@
 
 	<emitter type="sun">
 		<transform name="toWorld">
-			<rotate x="1" angle="-30"/>
+			<rotate angle="-30" x="1"/>
 			<rotate angle="30" z="1"/>
-			<rotate angle="0" y="1"/>
+			<rotate y="1" angle="0"/>
 		</transform>
 		<float name="hour" value="11"/>
 		<float name="turbidity" value="5"/>
@@ -86,16 +85,16 @@
 		</film>
 	</sensor>-->
 
-	<bsdf id="blue" type="diffuse">
+	<bsdf type="diffuse" id="blue">
 		<rgb name="reflectance" value="0.031373 0.478431 0.760784"/>
 	</bsdf>
 
-	<bsdf id="poolinside" type="dielectric">
+	<bsdf type="dielectric" id="poolinside">
 		<float name="intIOR" value="1.54"/>
 		<float name="extIOR" value="1.00028"/>
 	</bsdf>
 
-	<bsdf id="CookerBlack" type="twosided">
+	<bsdf type="twosided" id="CookerBlack">
 		<bsdf type="roughplastic">
 			<float name="alpha" value="0.08"/>
 			<string name="distribution" value="ggx"/>
@@ -106,37 +105,37 @@
 		</bsdf>
 	</bsdf>
 
-	<bsdf id="CookerGlass" type="dielectric">
+	<bsdf type="dielectric" id="CookerGlass">
 		<float name="intIOR" value="1.5"/>
 		<float name="extIOR" value="1"/>
 		<rgb name="specularTransmittance" value="0, 0, 0"/>
 	</bsdf>
 
-	<bsdf id="WineGlasses" type="dielectric">
+	<bsdf type="dielectric" id="WineGlasses">
 		<float name="intIOR" value="1.5"/>
 		<float name="extIOR" value="1"/>
 	</bsdf>
 
-	<bsdf id="wall" type="diffuse">
+	<bsdf type="diffuse" id="wall">
 		<rgb name="reflectance" value="1,1,1"/>
 	</bsdf>
 
-	<bsdf id="red" type="diffuse">
+	<bsdf type="diffuse" id="red">
 		<rgb name="reflectance" value="1,0,0"/>
 	</bsdf>
 
-	<bsdf id="green" type="diffuse">
+	<bsdf type="diffuse" id="green">
 		<rgb name="reflectance" value="0,1,0"/>
 	</bsdf>
 
-	<bsdf id="color-blue" type="diffuse">
+	<bsdf type="diffuse" id="color-blue">
 		<rgb name="reflectance" value="0,0,1"/>
 	</bsdf>
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.75" z="1"/>
-			<translate x="0" y="-0.5" z="0"/>
+			<scale y="4.75" x="1" z="1"/>
+			<translate y="-0.5" x="0" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -144,8 +143,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="-4.8" z="1"/>
-			<translate x="2" y="-0.4" z="0"/>
+			<scale y="-4.8" x="1" z="1"/>
+			<translate y="-0.4" x="2" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -153,8 +152,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="-2" y="0" z="0"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="-2" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -162,8 +161,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="-4.9" z="1"/>
-			<translate x="0" y="-0.2" z="2"/>
+			<scale y="-4.9" x="1" z="1"/>
+			<translate y="-0.2" x="0" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -171,8 +170,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="0" y="0" z="-2"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="0" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -180,8 +179,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="-2" y="-0.5" z="-2"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-0.5" x="-2" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -189,8 +188,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="2" y="-1" z="-2"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="2" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -198,8 +197,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="-2" y="-1" z="2"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="-2" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -207,8 +206,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.75" z="1"/>
-			<translate x="2" y="-0.5" z="2"/>
+			<scale y="4.75" x="1" z="1"/>
+			<translate y="-0.5" x="2" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -217,8 +216,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="0" y="-0.8" z="6"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="0" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -226,8 +225,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="2" y="-1" z="6"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="2" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -235,8 +234,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-2" y="-0.2" z="6"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-2" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -244,8 +243,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="0" y="-0.4" z="8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="0" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -253,8 +252,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="0" y="0" z="4"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="0" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -262,8 +261,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-2" y="-0.6" z="4"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-2" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -271,8 +270,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="2" y="-0.2" z="4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="2" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -280,8 +279,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="-2" y="-0.8" z="8"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="-2" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -289,8 +288,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="2" y="0" z="8"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="2" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -299,8 +298,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="0" y="-1" z="-6"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="0" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -308,8 +307,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="2" y="-0.8" z="-6"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="2" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -317,8 +316,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-2" y="-0.6" z="-6"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-2" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -326,8 +325,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="0" y="-0.4" z="-4"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="0" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -335,8 +334,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="0" y="0" z="-8"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="0" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -344,8 +343,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-2" y="-0.2" z="-8"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-2" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -353,8 +352,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="2" y="-0.6" z="-8"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="2" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -362,8 +361,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="-2" y="-0.8" z="-4"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="-2" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -371,8 +370,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="2" y="-0.2" z="-4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="2" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -381,8 +380,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="6" y="-0.2" z="0"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="6" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -390,8 +389,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="8" y="-0.8" z="0"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="8" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -399,8 +398,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="4" y="-0.6" z="0"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="4" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -408,8 +407,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="6" y="-1" z="2"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="6" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -417,8 +416,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="6" y="-0.6" z="-2"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="6" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -426,8 +425,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="4" y="-0.4" z="-2"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="4" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -435,8 +434,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="8" y="-0.2" z="-2"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="8" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -444,8 +443,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="4" y="0" z="2"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="4" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -453,8 +452,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="8" y="-0.6" z="2"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="8" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -463,8 +462,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="6" y="0" z="6"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="6" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -472,8 +471,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="8" y="-0.4" z="6"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="8" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -481,8 +480,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="4" y="-0.6" z="6"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="4" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -490,8 +489,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="6" y="-0.4" z="8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="6" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -499,8 +498,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="6" y="-0.8" z="4"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="6" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -508,8 +507,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="4" y="-0.2" z="4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="4" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -517,8 +516,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="8" y="-0.2" z="4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="8" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -526,8 +525,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="4" y="-0.2" z="8"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="4" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -535,8 +534,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="8" y="-0.6" z="8"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="8" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -545,8 +544,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="6" y="-1" z="-6"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="6" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -554,8 +553,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="8" y="-0.8" z="-6"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="8" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -563,8 +562,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="4" y="-0.8" z="-6"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="4" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -572,8 +571,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="6" y="-0.8" z="-4"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="6" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -581,8 +580,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="6" y="-0.8" z="-8"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="6" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -590,8 +589,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="4" y="-0.4" z="-8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="4" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -599,8 +598,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="8" y="-0.4" z="-8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="8" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -608,8 +607,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="4" y="-0.4" z="-4"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="4" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -617,8 +616,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="8" y="-0.4" z="-4"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="8" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -627,8 +626,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-6" y="-0.6" z="0"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-6" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -636,8 +635,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="-4" y="-1" z="0"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="-4" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -645,8 +644,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-8" y="-0.4" z="0"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-8" z="0"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -654,8 +653,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-6" y="-0.2" z="2"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-6" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -663,8 +662,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-6" y="-0.4" z="-2"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-6" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -672,8 +671,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-8" y="-0.6" z="-2"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-8" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -681,8 +680,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-4" y="-0.6" z="-2"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-4" z="-2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -690,8 +689,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-8" y="-0.4" z="2"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-8" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -699,8 +698,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="-4" y="0" z="2"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="-4" z="2"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -709,8 +708,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="-6" y="-0.8" z="6"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="-6" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -718,8 +717,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="-4" y="-0.8" z="6"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="-4" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -727,8 +726,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-8" y="-0.2" z="6"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-8" z="6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -736,8 +735,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-6" y="-0.2" z="8"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-6" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -745,8 +744,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-6" y="-0.6" z="4"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-6" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -754,8 +753,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-8" y="-0.6" z="4"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-8" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -763,8 +762,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-4" y="-0.2" z="4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-4" z="4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -772,8 +771,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-8" y="-0.4" z="8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-8" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -781,8 +780,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-4" y="-0.4" z="8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-4" z="8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -791,8 +790,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.5" z="1"/>
-			<translate x="-6" y="-1" z="-6"/>
+			<scale y="4.5" x="1" z="1"/>
+			<translate y="-1" x="-6" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -800,8 +799,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-4" y="-0.6" z="-6"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-4" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -809,8 +808,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-8" y="-0.4" z="-6"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-8" z="-6"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -818,8 +817,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-6" y="-0.2" z="-4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-6" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -827,8 +826,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="1"/>
-			<translate x="-6" y="0" z="-8"/>
+			<scale y="5" x="1" z="1"/>
+			<translate y="0" x="-6" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -836,8 +835,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.8" z="1"/>
-			<translate x="-8" y="-0.4" z="-8"/>
+			<scale y="4.8" x="1" z="1"/>
+			<translate y="-0.4" x="-8" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -845,8 +844,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.6" z="1"/>
-			<translate x="-4" y="-0.8" z="-8"/>
+			<scale y="4.6" x="1" z="1"/>
+			<translate y="-0.8" x="-4" z="-8"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -854,8 +853,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.7" z="1"/>
-			<translate x="-8" y="-0.6" z="-4"/>
+			<scale y="4.7" x="1" z="1"/>
+			<translate y="-0.6" x="-8" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -863,8 +862,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="4.9" z="1"/>
-			<translate x="-4" y="-0.2" z="-4"/>
+			<scale y="4.9" x="1" z="1"/>
+			<translate y="-0.2" x="-4" z="-4"/>
 		</transform>
 
 		<ref id="poolinside"/>
@@ -873,8 +872,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="10" y="5" z="1"/>
-			<translate x="-1" y="0" z="10"/>
+			<scale y="5" x="10" z="1"/>
+			<translate y="0" x="-1" z="10"/>
 		</transform>
 
 		<ref id="blue"/>
@@ -882,8 +881,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="10"/>
-			<translate x="-10" y="0" z="-1"/>
+			<scale y="5" x="1" z="10"/>
+			<translate y="0" x="-10" z="-1"/>
 		</transform>
 
 		<ref id="blue"/>
@@ -891,8 +890,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="1" y="5" z="10"/>
-			<translate x="10" y="0" z="1"/>
+			<scale y="5" x="1" z="10"/>
+			<translate y="0" x="10" z="1"/>
 		</transform>
 
 		<ref id="blue"/>
@@ -900,8 +899,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="10" y="5" z="1"/>
-			<translate x="1" y="0" z="-10"/>
+			<scale y="5" x="10" z="1"/>
+			<translate y="0" x="1" z="-10"/>
 		</transform>
 
 		<ref id="blue"/>
@@ -910,8 +909,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="11" y="1" z="11"/>
-			<translate x="0" y="-6" z="0"/>
+			<scale y="1" x="11" z="11"/>
+			<translate y="-6" x="0" z="0"/>
 		</transform>
 
 		<ref id="blue"/>
@@ -920,8 +919,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="18" y="0.3" z="4"/>
-			<translate x="0" y="5" z="-13"/>
+			<scale y="0.3" x="18" z="4"/>
+			<translate y="5" x="0" z="-13"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -929,8 +928,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="22" y="0.3" z="4"/>
-			<translate x="0" y="5" z="13"/>
+			<scale y="0.3" x="22" z="4"/>
+			<translate y="5" x="0" z="13"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -938,8 +937,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="6" y="0.3" z="9"/>
-			<translate x="15" y="5" z="0"/>
+			<scale y="0.3" x="6" z="9"/>
+			<translate y="5" x="15" z="0"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -947,8 +946,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="6" y="0.3" z="9"/>
-			<translate x="-15" y="5" z="0"/>
+			<scale y="0.3" x="6" z="9"/>
+			<translate y="5" x="-15" z="0"/>
 		</transform>
 
 		<ref id="wall"/>
