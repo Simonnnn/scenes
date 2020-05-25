@@ -7,30 +7,29 @@
 <scene version="0.6.0">
 	<integrator type="mlt">
 		<integer name="directSamples" value="32768"/>
-		<integer name="rrDepth" value="10"/>
 	</integrator>
 
 	<sensor type="perspective">
 		<float name="farClip" value="2800"/>
-		<float name="focusDistance" value="1000"/>
+		<float name="focusDistance" value="886.868"/>
 		<float name="fov" value="39.3077"/>
 		<string name="fovAxis" value="x"/>
 		<float name="nearClip" value="10"/>
+		<float name="shutterClose" value="1"/>
+		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
 
-			<lookat up="0, -0.292842, 0.956161" target="278, 1249.04, 499.707" origin="278, 1250, 500"/>
+			<lookat origin="278, 1141.8, 466.974" up="0, -0.291936, 0.956438" target="278, 1140.84, 466.682"/>
 		</transform>
 
 		<sampler type="independent">
 			<integer name="sampleCount" value="32768"/>
 		</sampler>
 
-		<float name='shutterOpen' value='0'/>
-        <float name='shutterClose' value='0'/>
 		<film type="hdrfilm">
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="150"/>
-			<integer name="width" value="150"/>
+			<integer name="height" value="200"/>
+			<integer name="width" value="200"/>
 
 			<rfilter type="box"/>
 		</film>
@@ -60,13 +59,12 @@
 		<transform name="toWorld">
 			<rotate angle="70" x="1"/>
 			<rotate angle="180" z="1"/>
-			<rotate angle="0" y="1"/>
+			<rotate y="1" angle="0"/>
 		</transform>
 		<float name="hour" value="9"/>
 		<float name="turbidity" value="5"/>
 		<float name="sunRadiusScale" value="4"/>
 	</emitter>
-	
 	<!--<shape type="cube">
 		<transform name="toWorld">
 			<scale x="10" y="10" z="10"/>
@@ -76,7 +74,6 @@
 			<rgb name="reflectance" value="1,0,0"/>
 		</bsdf>
 	</shape>-->
-	
 	<!--<shape type="sphere">
 		<transform name="toWorld">
 			<translate x="-80" y="275" z="275"/>
@@ -122,7 +119,7 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
-			<rotate angle="180" y="1"/>
+			<rotate y="1" angle="180"/>
 			<translate y="0" z="565" x="556"/>
 			<scale y="1" z="1" x="1"/>
 		</transform>
