@@ -5,10 +5,8 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="mlt">
-		<integer name="directSamples" value="100000"/>
-		<integer name="luminanceSamples" value="100000"/>
-		<integer name="rrDepth" value="12"/>
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="10"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -20,7 +18,8 @@
 		<float name="shutterClose" value="1"/>
 		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
-			<lookAt origin="278, 1373, 270" target="278, 1273, 271" up="0, 1, 0"/>
+
+			<lookat origin="278, 1373, 270" up="0, 0.0099995, 0.99995" target="278, 1372, 270.01"/>
 		</transform>
 
 		<sampler type="independent">
@@ -54,12 +53,13 @@
 	<bsdf type="diffuse" id="light">
 		<spectrum name="reflectance" value="400:0.78, 500:0.78, 600:0.78, 700:0.78"/>
 	</bsdf>
+
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_luminaire.obj"/>
 		<transform name="toWorld">
-			<translate x="-80" y="-390" z="-10"/>
-			<scale x="1.4" y="1" z="1.7" />
-			<rotate z="1" angle="90"/>
+			<translate y="-390" z="-10" x="-80"/>
+			<scale y="1" z="1.7" x="1.4"/>
+			<rotate angle="90" z="1"/>
 		</transform>
 
 		<ref id="light"/>
@@ -68,12 +68,13 @@
 			<spectrum name="radiance" value="400:4000, 500:4008, 600:4015.6, 700:4018.4"/>
 		</emitter>
 	</shape>
+
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_luminaire.obj"/>
 		<transform name="toWorld">
-			<translate x="-80" y="-390" z="-210"/>
-			<scale x="1.4" y="1" z="1.7" />
-			<rotate z="1" angle="90"/>
+			<translate y="-390" z="-210" x="-80"/>
+			<scale y="1" z="1.7" x="1.4"/>
+			<rotate angle="90" z="1"/>
 		</transform>
 
 		<ref id="light"/>
@@ -102,8 +103,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="80" y="242"/>
+			<scale y="22" z="10" x="90"/>
+			<translate y="242" z="80" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -111,8 +112,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="80" y="308"/>
+			<scale y="22" z="10" x="90"/>
+			<translate y="308" z="80" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -120,8 +121,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="80" y="363"/>
+			<scale y="12" z="10" x="90"/>
+			<translate y="363" z="80" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -129,8 +130,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="80" y="187"/>
+			<scale y="12" z="10" x="90"/>
+			<translate y="187" z="80" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -138,8 +139,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="65" y="100"/>
-			<translate x="-90" z="155" y="275"/>
+			<scale y="100" z="65" x="90"/>
+			<translate y="275" z="155" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -147,8 +148,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="25" y="100"/>
-			<translate x="-90" z="46" y="275"/>
+			<scale y="100" z="25" x="90"/>
+			<translate y="275" z="46" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -156,27 +157,28 @@
 
 	<shape name="back_cube" type="cube">
 		<transform name="toWorld">
-			<scale x="10" z="100" y="100"/>
-			<translate x="-190" z="120" y="275"/>
+			<scale y="100" z="100" x="10"/>
+			<translate y="275" z="120" x="-190"/>
 		</transform>
 
 		<ref id="wall"/>
 	</shape>
+
 	<shape name="back_cube" type="cube">
 		<transform name="toWorld">
-			<scale x="100" z="100" y="10"/>
-			<translate x="-100" z="120" y="366"/>
+			<scale y="10" z="100" x="100"/>
+			<translate y="366" z="120" x="-100"/>
 		</transform>
+
 		<ref id="wall"/>
 	</shape>
-	
 	<!-- cube 1 end -->
 	<!-- cube 2 start -->
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="490" y="242"/>
+			<scale y="22" z="10" x="90"/>
+			<translate y="242" z="490" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -184,8 +186,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="22"/>
-			<translate x="-90" z="490" y="308"/>
+			<scale y="22" z="10" x="90"/>
+			<translate y="308" z="490" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -193,8 +195,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="490" y="363"/>
+			<scale y="12" z="10" x="90"/>
+			<translate y="363" z="490" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -202,8 +204,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="10" y="12"/>
-			<translate x="-90" z="490" y="187"/>
+			<scale y="12" z="10" x="90"/>
+			<translate y="187" z="490" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -211,8 +213,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="65" y="100"/>
-			<translate x="-90" z="415" y="275"/>
+			<scale y="100" z="65" x="90"/>
+			<translate y="275" z="415" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -220,8 +222,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="90" z="25" y="100"/>
-			<translate x="-90" z="524" y="275"/>
+			<scale y="100" z="25" x="90"/>
+			<translate y="275" z="524" x="-90"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -229,18 +231,19 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<scale x="10" z="100" y="100"/>
-			<translate x="-190" z="450" y="275"/>
+			<scale y="100" z="100" x="10"/>
+			<translate y="275" z="450" x="-190"/>
 		</transform>
 
 		<ref id="wall"/>
 	</shape>
-	
+
 	<shape name="back_cube" type="cube">
 		<transform name="toWorld">
-			<scale x="100" z="100" y="10"/>
-			<translate x="-100" z="450" y="366"/>
+			<scale y="10" z="100" x="100"/>
+			<translate y="366" z="450" x="-100"/>
 		</transform>
+
 		<ref id="wall"/>
 	</shape>
 	<!-- cube 2 end -->
@@ -248,12 +251,12 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-11" z="490" y="275"/>
+				<scale y="98" z="50" x="10"/>
+				<translate y="275" z="490" x="-11"/>
 			</transform>
 			<transform time="1">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-11" z="420" y="275"/>
+				<scale y="98" z="50" x="10"/>
+				<translate y="275" z="420" x="-11"/>
 			</transform>
 		</animation>
 
@@ -263,12 +266,12 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-11" z="150" y="275"/>
+				<scale y="98" z="50" x="10"/>
+				<translate y="275" z="150" x="-11"/>
 			</transform>
 			<transform time="1">
-				<scale x="10" z="50" y="98"/>
-				<translate x="-11" z="80" y="275"/>
+				<scale y="98" z="50" x="10"/>
+				<translate y="275" z="80" x="-11"/>
 			</transform>
 		</animation>
 
@@ -304,8 +307,8 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_floor.obj"/>
 		<transform name="toWorld">
-			<translate x="300" z="0" y="0"/>
-			<scale x="0.65" z="1" y="1"/>
+			<translate y="0" z="0" x="300"/>
+			<scale y="1" z="1" x="0.65"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -314,8 +317,8 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
-			<translate x="300" z="0" y="0"/>
-			<scale x="0.65" z="1" y="1"/>
+			<translate y="0" z="0" x="300"/>
+			<scale y="1" z="1" x="0.65"/>
 		</transform>
 
 		<ref id="wall"/>
@@ -324,9 +327,9 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
-			<rotate angle="180" y="1"/>
-			<translate x="855" z="565" y="0"/>
-			<scale x="0.65" z="1" y="1"/>
+			<rotate y="1" angle="180"/>
+			<translate y="0" z="565" x="855"/>
+			<scale y="1" z="1" x="0.65"/>
 		</transform>
 
 		<ref id="wall"/>
