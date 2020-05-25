@@ -19,7 +19,7 @@
 		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
 
-			<lookat origin="278, 1141.8, 466.974" up="0, -0.291936, 0.956438" target="278, 1140.84, 466.682"/>
+			<lookat target="278, 1140.84, 466.683" origin="278, 1141.8, 466.974" up="0, -0.290941, 0.956741"/>
 		</transform>
 
 		<sampler type="independent">
@@ -28,8 +28,8 @@
 
 		<film type="hdrfilm">
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="200"/>
-			<integer name="width" value="200"/>
+			<integer name="height" value="500"/>
+			<integer name="width" value="500"/>
 
 			<rfilter type="box"/>
 		</film>
@@ -59,7 +59,7 @@
 		<transform name="toWorld">
 			<rotate angle="70" x="1"/>
 			<rotate angle="180" z="1"/>
-			<rotate y="1" angle="0"/>
+			<rotate angle="0" y="1"/>
 		</transform>
 		<float name="hour" value="9"/>
 		<float name="turbidity" value="5"/>
@@ -89,12 +89,12 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<translate y="2.75" z="1.5" x="2"/>
-				<scale y="100" z="100" x="100"/>
+				<translate z="1.5" y="2.5" x="2"/>
+				<scale z="100" y="100" x="100"/>
 			</transform>
 			<transform time="1">
-				<translate y="3" z="1.5" x="2"/>
-				<scale y="100" z="100" x="100"/>
+				<translate z="1.5" y="3" x="2"/>
+				<scale z="100" y="100" x="100"/>
 			</transform>
 		</animation>
 
@@ -104,12 +104,12 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<translate y="4.625" z="2" x="2.75"/>
-				<scale y="60" z="60" x="60"/>
+				<translate z="2" y="4.25" x="2.75"/>
+				<scale z="60" y="60" x="60"/>
 			</transform>
 			<transform time="1">
-				<translate y="5" z="2" x="2.75"/>
-				<scale y="60" z="60" x="60"/>
+				<translate z="2" y="5" x="2.75"/>
+				<scale z="60" y="60" x="60"/>
 			</transform>
 		</animation>
 
@@ -119,9 +119,9 @@
 	<shape type="obj">
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
-			<rotate y="1" angle="180"/>
-			<translate y="0" z="565" x="556"/>
-			<scale y="1" z="1" x="1"/>
+			<rotate angle="180" y="1"/>
+			<translate z="565" y="0" x="556"/>
+			<scale z="1" y="1" x="1"/>
 		</transform>
 
 		<ref id="wall"/>
