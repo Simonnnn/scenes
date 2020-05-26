@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+	Mitsuba conversion of the classic Cornell Box scene (mitsuba-renderer.org).
+	Edited by us to have an upside-down light source.
+-->
+
+<scene version="0.6.0">
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="14"/>
+	</integrator>
+
+	<sensor type="perspective">
+		<float name="farClip" value="280"/>
+		<float name="focusDistance" value="150.837"/>
+		<float name="fov" value="44.8518"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="10"/>
+		<transform name="toWorld">
+
+			<lookat up="0.241752, 0.901005, 0.360204" target="9.54416, 41.01, -28.0158" origin="9.0465, 41.4438, -28.7669"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="262144"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<boolean name="banner" value="false"/>
+			<integer name="height" value="350"/>
+			<integer name="width" value="350"/>
+
+			<rfilter type="box"/>
+		</film>
+	</sensor>
+
+	<emitter type="sunsky">
+		<transform name="toWorld">
+			<rotate angle="0" x="1"/>
+			<rotate z="1" angle="0"/>
+			<rotate angle="2" y="1"/>
+		</transform>
+		<float name="hour" value="8.5"/>
+		<float name="turbidity" value="5"/>
+		<float name="sunRadiusScale" value="4"/>
+		<float name="scale" value="2"/>
+	</emitter>
+	<!--<sensor type="perspective">
+		<float name="farClip" value="280"/>
+		<float name="focusDistance" value="78.6536"/>
+		<float name="fov" value="50.9268"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="10"/>
+		<transform name="toWorld">
+
+			<lookat up="0.163047, 0.976744, 0.139234" target="-72.5784, 23.4835, -61.9794" origin="-73.3211, 23.6979, -62.6137"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>-->
+
+	<bsdf id="CookerBlack" type="twosided">
+		<bsdf type="roughplastic">
+			<float name="alpha" value="0.08"/>
+			<string name="distribution" value="ggx"/>
+			<float name="intIOR" value="1.5"/>
+			<float name="extIOR" value="1"/>
+			<boolean name="nonlinear" value="true"/>
+			<rgb name="diffuseReflectance" value="0.015396, 0.015396, 0.015396"/>
+		</bsdf>
+	</bsdf>
+
+	<bsdf id="CookerGlass" type="dielectric">
+		<float name="intIOR" value="1.5"/>
+		<float name="extIOR" value="1"/>
+		<rgb name="specularTransmittance" value="0, 0, 0"/>
+	</bsdf>
+
+	<bsdf id="WineGlasses" type="dielectric">
+		<float name="intIOR" value="1.5"/>
+		<float name="extIOR" value="1"/>
+	</bsdf>
+
+	<bsdf id="wall" type="diffuse">
+		<rgb name="reflectance" value="1,1,1"/>
+	</bsdf>
+
+	<bsdf id="red" type="diffuse">
+		<rgb name="reflectance" value="1,0,0"/>
+	</bsdf>
+
+	<bsdf id="green" type="diffuse">
+		<rgb name="reflectance" value="0,1,0"/>
+	</bsdf>
+
+	<bsdf id="wall-01" type="diffuse">
+		<rgb name="reflectance" value="0.7215,0.6352,0.5372"/>
+	</bsdf>
+
+	<bsdf id="brown" type="diffuse">
+		<rgb name="reflectance" value="0.4274,0.3137,0.1529"/>
+	</bsdf>
+
+	<bsdf id="table-leg" type="diffuse">
+		<rgb name="reflectance" value="0,0,0"/>
+	</bsdf>
+
+	<bsdf id="glossy" type="roughplastic">
+		<!--<rgb name="diffuseReflectance" value="0.07 0.09 0.13"/>-->
+		<spectrum name="specularReflectance" value="1"/>
+		<float name="intIOR" value="2"/>
+		<float name="alpha" value="0.05"/>
+	</bsdf>
+
+	<bsdf id="mat_glass" type="dielectric">
+		<!-- Rhino object 'Glass' -->
+		<float name="intIOR" value="1.5"/>
+		<float name="extIOR" value="1.0"/>
+		<float name="alpha" value="0.05"/>
+	</bsdf>
+	<!-- table -->
+	<!-- level 1 -->
+	<!-- obj 3 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="10" y="10"/>
+			<translate z="59" x="32" y="0"/>
+		</transform>
+
+		<ref id="CookerGlass"/>
+	</shape>
+	<!-- obj 2 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="8" y="10"/>
+			<translate z="59" x="50" y="0"/>
+		</transform>
+
+		<ref id="CookerBlack"/>
+	</shape>
+	<!-- obj 1 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="8" y="10"/>
+			<translate z="59" x="66" y="0"/>
+		</transform>
+
+		<ref id="brown"/>
+	</shape>
+	<!-- level 2 -->
+	<!-- obj 1 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="7"/>
+			<translate z="59" x="68" y="17"/>
+		</transform>
+
+		<ref id="CookerBlack"/>
+	</shape>
+	<!-- obj 2 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="8" y="4"/>
+			<translate z="59" x="54" y="14"/>
+		</transform>
+
+		<ref id="mat_glass"/>
+	</shape>
+	<!-- obj 3 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="7"/>
+			<translate z="59" x="40" y="17"/>
+		</transform>
+
+		<ref id="glossy"/>
+	</shape>
+	<!-- obj 4 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="4"/>
+			<translate z="59" x="28" y="14"/>
+		</transform>
+
+		<ref id="brown"/>
+	</shape>
+	<!-- level 3 -->
+	<!-- obj 2 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="15" x="6" y="3"/>
+			<translate z="59" x="28" y="21"/>
+		</transform>
+
+		<ref id="mat_glass"/>
+	</shape>
+	<!-- table blad -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="20" y="0.5"/>
+			<translate z="10" x="50" y="3.5"/>
+		</transform>
+
+		<ref id="WineGlasses"/>
+	</shape>
+	<!-- right back poot -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.7" x="0.7" y="7"/>
+			<translate z="0" x="70" y="-3"/>
+		</transform>
+
+		<ref id="table-leg"/>
+	</shape>
+	<!-- left back poot -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.7" x="0.7" y="7"/>
+			<translate z="20" x="70" y="-3"/>
+		</transform>
+
+		<ref id="table-leg"/>
+	</shape>
+	<!-- right front poot -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.7" x="0.7" y="7"/>
+			<translate z="0" x="30" y="-3"/>
+		</transform>
+
+		<ref id="table-leg"/>
+	</shape>
+	<!-- left front poot -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.7" x="0.7" y="7"/>
+			<translate z="20" x="30" y="-3"/>
+		</transform>
+
+		<ref id="table-leg"/>
+	</shape>
+	<!-- window wall -->
+	<!--lefter part -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="40" x="1" y="50"/>
+			<translate z="-40" x="75" y="25"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+	<!-- righter part -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="30" x="1" y="50"/>
+			<translate z="50" x="75" y="25"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+	<!-- middle lower part -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="1" y="10"/>
+			<translate z="10" x="75" y="0"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+	<!-- middle upper part -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="1" y="20"/>
+			<translate z="10" x="75" y="56"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+	<!-- rails left vert -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.3" x="0.3" y="13"/>
+			<translate z="2" x="75" y="23"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+	<!-- rails right vert -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.3" x="0.3" y="13"/>
+			<translate z="18" x="75" y="23"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+	<!-- rails midden vert -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="0.3" x="0.3" y="13"/>
+			<translate z="10" x="75" y="23"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+	<!-- rails midden horz -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="0.3" y="0.3"/>
+			<translate z="10" x="75" y="13"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="0.3" y="0.3"/>
+			<translate z="10" x="75" y="20"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="0.3" y="0.3"/>
+			<translate z="10" x="75" y="27"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale z="10" x="0.3" y="0.3"/>
+			<translate z="10" x="75" y="34"/>
+		</transform>
+
+		<ref id="red"/>
+	</shape>
+	<!-- floor -->
+
+	<shape type="rectangle">
+		<transform name="toWorld">
+			<scale z="1" x="75" y="75"/>
+			<translate z="-10" x="0" y="0"/>
+			<rotate angle="-90" x="1"/>
+		</transform>
+
+		<ref id="wall"/>
+	</shape>
+	<!-- roof -->
+
+	<shape type="rectangle">
+		<transform name="toWorld">
+			<scale z="1" x="75" y="75"/>
+			<translate z="-60" x="0" y="0"/>
+			<rotate angle="90" x="1"/>
+		</transform>
+
+		<ref id="wall"/>
+	</shape>
+	<!-- wall left -->
+
+	<shape type="rectangle">
+		<transform name="toWorld">
+			<scale z="1" x="75" y="75"/>
+			<translate z="-74.5" x="-35" y="0"/>
+			<rotate z="1" angle="-90"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+	<!-- wall right -->
+
+	<shape type="rectangle">
+		<transform name="toWorld">
+			<scale z="1" x="75" y="75"/>
+			<translate z="-74.5" x="0" y="35"/>
+			<rotate angle="180" y="1"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+	<!-- wall back -->
+
+	<shape type="rectangle">
+		<transform name="toWorld">
+			<scale z="1" x="75" y="75"/>
+			<translate z="-74.5" x="0" y="35"/>
+			<rotate angle="90" y="1"/>
+		</transform>
+
+		<ref id="wall-01"/>
+	</shape>
+</scene>
