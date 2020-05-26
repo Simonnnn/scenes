@@ -1,62 +1,89 @@
-2020-05-25 20:05:19 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-05-25 20:05:19 INFO  main [mitsuba.cpp:377] Parsing scene description from "moving-square-wall-glossy-smaller-view.xml" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/sphere.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-05-25 20:05:19 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-05-25 20:05:19 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-25 20:05:19 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
-2020-05-25 20:05:19 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (13 primitives) ..
-2020-05-25 20:05:19 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
-2020-05-25 20:05:19 INFO  ren0 [BDPTIntegrator] Starting render job (250x300, 35000 samples, 24 cores, SSE2 enabled) ..
-2020-05-25 20:33:34 WARN  wrk2 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-25 20:34:19 WARN  wrk8 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-25 21:16:15 INFO  ren0 [RenderJob] Render time: 1.1823h
-2020-05-25 21:16:15 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/moving-square-wall-glossy-smaller-view.exr" ..
-2020-05-25 21:16:15 INFO  main [statistics.cpp:142] Statistics:
+2020-05-26 10:43:41 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-05-26 10:43:41 INFO  main [mitsuba.cpp:377] Parsing scene description from "torus-like-cube.xml" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/mlt.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
+2020-05-26 10:43:41 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/torus-like-cube.xml" (near line 56): Unqueried attribute "alpha" in element "bsdf"
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/sunsky.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/sky.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/envmap.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
+2020-05-26 10:43:41 INFO  main [EnvironmentMap] Precomputing data structures for environment map sampling (515.0 KiB)
+2020-05-26 10:43:41 INFO  main [EnvironmentMap] Done (took 1 ms)
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2020-05-26 10:43:41 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-05-26 10:43:41 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2020-05-26 10:43:41 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-05-26 10:43:41 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-05-26 10:43:41 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
+2020-05-26 10:43:41 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-05-26 10:43:41 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-05-26 10:43:41 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-05-26 10:43:41 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (4 primitives) ..
+2020-05-26 10:43:41 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
+2020-05-26 10:43:41 INFO  ren0 [PluginManager] Loading plugin "plugins/sphere.so" ..
+2020-05-26 10:43:41 INFO  ren0 [MLT] Starting render job (300x300, 24 cores, SSE2 enabled, approx. 32768 mutations/pixel) ..
+2020-05-26 10:43:41 WARN  ren0 [MLT] Warning: increasing number of luminance samples to 147460
+2020-05-26 10:43:41 INFO  ren0 [PluginManager] Loading plugin "plugins/direct.so" ..
+2020-05-26 10:43:41 INFO  ren0 [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2020-05-26 10:43:41 INFO  ren0 [SamplingIntegrator] Starting render job (300x300, 8 samples, 24 cores, SSE2 enabled) ..
+2020-05-26 10:46:30 INFO  ren0 [PathSampler] Integrating luminance values over the image plane (147460 samples)..
+2020-05-26 10:46:31 INFO  ren0 [PathSampler] Done -- average luminance value = 0.026826, stddev = 1.182609 (took 1088 ms)
+2020-05-26 11:07:16 INFO  ren0 [RenderJob] Render time: 23.5798m
+2020-05-26 11:07:16 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/torus-like-cube.exr" ..
+2020-05-26 11:07:16 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
-    -  plugins/area.so [Area light]
-    -  plugins/bdpt.so [Bidirectional path tracer]
     -  plugins/box.so [Box filter]
     -  plugins/cube.so [Cube intersection primitive]
+    -  plugins/dielectric.so [Smooth dielectric BSDF]
     -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/envmap.so [Environment map]
     -  plugins/hdrfilm.so [High dynamic range film]
     -  plugins/independent.so [Independent sampler]
     -  plugins/instance.so [Instanced geometry]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/mlt.so [Path Space Metropolis Light Transport]
     -  plugins/obj.so [OBJ triangle mesh loader]
     -  plugins/perspective.so [Perspective camera]
-    -  plugins/roughplastic.so [Rough plastic BRDF]
     -  plugins/shapegroup.so [Grouped geometry for instancing]
+    -  plugins/sky.so [Skylight emitter]
     -  plugins/sphere.so [Sphere intersection primitive]
+    -  plugins/sunsky.so [Sun & sky emitter]
+
+  * Bidirectional mutation :
+    -  Acceptance rate : 0.93 % (7.55 M of 812.57 M)
+    -  Successful generation rate : 4.40 % (35.77 M of 812.57 M)
+
+  * Caustic perturbation :
+    -  Acceptance rate : 70.47 % (268.45 M of 380.96 M)
+    -  Successful generation rate : 77.61 % (295.68 M of 380.96 M)
 
   * General :
-    -  Normal rays traced : 27.009 G
+    -  Normal rays traced : 8.874 G
+    -  Shadow rays traced : 1.376 G
+
+  * Lens perturbation :
+    -  Acceptance rate : 69.08 % (260.91 M of 377.70 M)
+    -  Successful generation rate : 73.95 % (279.33 M of 377.70 M)
+
+  * Multi-chain perturbation :
+    -  Acceptance rate : 62.62 % (567.58 M of 906.39 M)
+    -  Successful generation rate : 65.63 % (594.91 M of 906.39 M)
+
+  * Path Space MLT :
+    -  Accepted mutations : 37.45 % (1.10 G of 2.95 G)
+
+  * Texture system :
+    -  Cumulative MIP map memory allocations : 1 MiB
+    -  Filtered texture lookups : 0.01 % (436.79 K of 5.87 G)
+    -  Lookups with clamped anisotropy : 0.00 % (0.00 of 436.79 K)
 ------------------------------------------------------------
