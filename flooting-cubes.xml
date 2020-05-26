@@ -5,9 +5,8 @@
 -->
 
 <scene version="0.6.0">
-	<integrator type="mlt">
-		<integer name="directSamples" value="32768"/>
-		<integer name="rrDepth" value="10"/>
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="12"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -24,54 +23,69 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="32768"/>
+			<integer name="sampleCount" value="262144"/>
 		</sampler>
 
 		<film type="hdrfilm">
 			<boolean name="banner" value="false"/>
-			<integer name="height" value="600"/>
-			<integer name="width" value="600"/>
+			<integer name="height" value="300"/>
+			<integer name="width" value="300"/>
 
 			<rfilter type="box"/>
 		</film>
 	</sensor>
 
-	<bsdf id="wall" type="diffuse">
+	<bsdf type="diffuse" id="wall">
 		<rgb name="reflectance" value="0.8,0.8,0.8"/>
 	</bsdf>
 
-	<bsdf id="light" type="diffuse">
+	<bsdf type="diffuse" id="light">
 		<spectrum name="reflectance" value="400:0.78, 500:0.78, 600:0.78, 700:0.78"/>
 	</bsdf>
 
-	<bsdf id="mat_donut" type="diffuse">
+	<bsdf type="diffuse" id="mat_donut">
 		<rgb name="reflectance" value=".8,.8,.4"/>
 		<!-- Rhino object 'Donut' -->
 	</bsdf>
 
-	<bsdf id="red_color" type="diffuse">
+	<bsdf type="diffuse" id="red_color">
+		<rgb name="reflectance" value="0.6,1,0.6"/>
+		<!-- Rhino object 'Donut' -->
+	</bsdf>
+
+	<bsdf type="diffuse" id="red_color2">
 		<rgb name="reflectance" value="1,0,0"/>
 		<!-- Rhino object 'Donut' -->
 	</bsdf>
 
-	<bsdf id="blue_color" type="diffuse">
+	<bsdf type="diffuse" id="blue_color">
+		<rgb name="reflectance" value="0.2,0.8,0.8"/>
+		<!-- Rhino object 'Donut' -->
+	</bsdf>
+
+	<bsdf type="diffuse" id="blue_color2">
 		<rgb name="reflectance" value="0,0,1"/>
 		<!-- Rhino object 'Donut' -->
 	</bsdf>
 
-	<bsdf id="green_color" type="diffuse">
+	<bsdf type="diffuse" id="green_color">
+		<rgb name="reflectance" value="0.8,1,0.4"/>
+		<!-- Rhino object 'Donut' -->
+	</bsdf>
+
+	<bsdf type="diffuse" id="green_color2">
 		<rgb name="reflectance" value="0,1,0"/>
 		<!-- Rhino object 'Donut' -->
 	</bsdf>
 
-	<bsdf id="mat_glass" type="dielectric">
+	<bsdf type="dielectric" id="mat_glass">
 		<!-- Rhino object 'Glass' -->
 		<float name="intIOR" value="1.5"/>
 		<float name="extIOR" value="1.0"/>
 		<float name="alpha" value="0.05"/>
 	</bsdf>
 
-	<bsdf id="gray_plastic" type="plastic">
+	<bsdf type="plastic" id="gray_plastic">
 		<rgb name="diffuseReflectance" value="0.8,0.8,0.8"/>
 		<float name="intIOR" value="1.9"/>
 	</bsdf>
@@ -85,14 +99,13 @@
 		<spectrum name="intensity" value="20000"/>
 		<float name="samplingWeight" value="200"/>
 	</emitter>-->
-
-	<shape type="obj">
+	<!--<shape type="obj">
 		<string name="filename" value="meshes/cbox_luminaire.obj"/>
 		<transform name="toWorld">
-			<translate x="-400" y="2000" z="00"/>
+			<translate z="00" y="2000" x="-400"/>
 			<rotate z="1" angle="-60"/>
 			<rotate y="1" angle="45"/>
-			<scale y="0.1" z="0.1" x="0.1"/>
+			<scale z="0.1" y="0.1" x="0.1"/>
 		</transform>
 
 		<ref id="light"/>
@@ -100,19 +113,44 @@
 		<emitter type="area">
 			<spectrum name="radiance" value="1000"/>
 		</emitter>
-	</shape>
-
-	<emitter type="sky">
+	</shape>-->
+	<!--<shape type="sphere">
 		<transform name="toWorld">
-			<rotate x="1" angle="90"/>
+			<translate x="0" z="50" y="0"/>
 		</transform>
-	</emitter>
+
+		<ref id="light"/>
+		<float name="radius" value="2"/>
+
+		<emitter type="area">
+			<spectrum name="radiance" value="400:100, 500:206, 600:221.2, 700:226.8"/>
+			<spectrum name="radiance" value="400:1600, 500:1706, 600:1721.2, 700:1726.8"/>
+		</emitter>
+	</shape>-->
+
+	<shape type="sphere">
+		<transform name="toWorld">
+			<translate y="-200" x="-200" z="250"/>
+		</transform>
+
+		<ref id="light"/>
+		<float name="radius" value="10"/>
+
+		<emitter type="area">
+			<spectrum name="radiance" value="400:1600, 500:1706, 600:1721.2, 700:1726.8"/>
+		</emitter>
+	</shape>
+	<!--<emitter type="sky">
+		<transform name="toWorld">
+			<rotate angle="90" x="1"/>
+		</transform>
+	</emitter>-->
 	<!-- level 1 -->
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="0" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="0" x="0" z="0"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="mat_donut"/>
@@ -120,8 +158,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="0" x="3"/>
-			<scale y="8" z="8" x="8"/>
+			<translate y="0" x="3" z="0"/>
+			<scale y="8" x="8" z="8"/>
 		</transform>
 
 		<ref id="green_color"/>
@@ -129,8 +167,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="2.5" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="0" x="0" z="2.5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="green_color"/>
@@ -138,8 +176,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="2.5" x="2.5"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="0" x="2.5" z="2.5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="red_color"/>
@@ -147,8 +185,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="5" x="2.5"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="0" x="2.5" z="5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="blue_color"/>
@@ -156,17 +194,17 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="5" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="0" x="0" z="5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
-		<ref id="red_color"/>
+		<ref id="mat_glass"/>
 	</shape>
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="5" x="5"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="0" x="5" z="5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="mat_donut"/>
@@ -174,8 +212,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0" z="2.5" x="5"/>
-			<scale y="10" z="10" x="10.5"/>
+			<translate y="0" x="5" z="2.5"/>
+			<scale y="10" x="10.5" z="10"/>
 		</transform>
 
 		<ref id="green_color"/>
@@ -183,8 +221,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="0.5" z="0" x="7"/>
-			<scale y="7" z="7" x="7"/>
+			<translate y="0.5" x="7" z="0"/>
+			<scale y="7" x="7" z="7"/>
 		</transform>
 
 		<ref id="mat_donut"/>
@@ -193,8 +231,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.5" z="0" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="2.5" x="0" z="0"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="red_color"/>
@@ -202,8 +240,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.75" z="0" x="3"/>
-			<scale y="7.5" z="7.5" x="7.5"/>
+			<translate y="2.75" x="3" z="0"/>
+			<scale y="7.5" x="7.5" z="7.5"/>
 		</transform>
 
 		<ref id="mat_donut"/>
@@ -211,8 +249,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.75" z="2.5" x="0"/>
-			<scale y="10" z="11" x="10"/>
+			<translate y="2.75" x="0" z="2.5"/>
+			<scale y="10" x="10" z="11"/>
 		</transform>
 
 		<ref id="gray_plastic"/>
@@ -220,17 +258,18 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.5" z="2.5" x="2.5"/>
-			<scale y="11" z="10" x="10"/>
+			<translate y="2.5" x="2.5" z="2.5"/>
+			<scale y="11" x="10" z="10"/>
 		</transform>
 
-		<ref id="mat_glass"/>
+		<ref id="mat_donut"/>
+		<!-- mat_glass -->
 	</shape>
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.5" z="5" x="2.5"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="2.5" x="2.5" z="5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="green_color"/>
@@ -238,8 +277,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.5" z="5" x="5"/>
-			<scale y="10" z="10" x="11.5"/>
+			<translate y="2.5" x="5" z="5"/>
+			<scale y="10" x="11.5" z="10"/>
 		</transform>
 
 		<ref id="blue_color"/>
@@ -247,8 +286,8 @@
 
 	<shape name="test" type="cube">
 		<transform name="toWorld">
-			<translate y="3" z="3" x="6.5"/>
-			<scale y="8" z="8" x="8"/>
+			<translate y="3" x="6.5" z="3"/>
+			<scale y="8" x="8" z="8"/>
 		</transform>
 
 		<ref id="red_color"/>
@@ -256,8 +295,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="2.5" z="6" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="2.5" x="0" z="6"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="red_color"/>
@@ -266,8 +305,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="5" z="0" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="5" x="0" z="0"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="blue_color"/>
@@ -275,8 +314,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="5.5" z="2.5" x="0.5"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="5.5" x="0.5" z="2.5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="mat_donut"/>
@@ -284,8 +323,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="5" z="5" x="0"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="5" x="0" z="5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="mat_donut"/>
@@ -293,8 +332,8 @@
 
 	<shape type="cube">
 		<transform name="toWorld">
-			<translate y="5" z="5" x="3"/>
-			<scale y="10" z="10" x="10"/>
+			<translate y="5" x="3" z="5"/>
+			<scale y="10" x="10" z="10"/>
 		</transform>
 
 		<ref id="red_color"/>
