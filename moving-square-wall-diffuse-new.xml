@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+	Mitsuba conversion of the classic Cornell Box scene (mitsuba-renderer.org).
+	Edited by us to have an upside-down light source.
+-->
+
+<scene version="0.6.0">
+	<!--<integrator type="mlt">
+                <integer name="luminanceSamples" value="262144"/>
+		<integer name="directSamples" value="524288"/>
+		<integer name="rrDepth" value="12"/>
+	</integrator>-->
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="12"/>
+	</integrator>
+
+	<sensor type="perspective">
+		<float name="farClip" value="2800"/>
+		<float name="focusDistance" value="618.639"/>
+		<float name="fov" value="48.1147"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="10"/>
+		<float name="shutterClose" value="2"/>
+		<float name="shutterOpen" value="0"/>
+		<transform name="toWorld">
+
+			<lookat target="351.409, 990.658, 273.826" origin="351.409, 991.658, 273.816" up="0, 0.00997875, 0.99995"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="262144"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<boolean name="banner" value="false"/>
+			<integer name="height" value="300"/>
+			<integer name="width" value="250"/>
+
+			<rfilter type="box"/>
+		</film>
+	</sensor>
+
+	<bsdf id="wall_old" type="diffuse">
+		<rgb name="reflectance" value="0.8,0.8,0.8"/>
+	</bsdf>
+
+	<bsdf id="wall_old2" type="roughplastic">
+		<rgb name="diffuseReflectance" value="0.8, 0.8, 0.8"/>
+	</bsdf>
+
+	<bsdf id="wall" type="roughplastic">
+		<!--<rgb name="diffuseReflectance" value="0.07 0.09 0.13"/>-->
+		<spectrum name="specularReflectance" value="1"/>
+		<float name="intIOR" value="2"/>
+		<float name="alpha" value="0.05"/>
+	</bsdf>
+
+	<bsdf id="light" type="diffuse">
+		<spectrum name="reflectance" value="400:0.78, 500:0.78, 600:0.78, 700:0.78"/>
+	</bsdf>
+	<!--<shape type="cube">
+		<transform name="toWorld">
+			<scale x="10" y="10" z="10"/>
+			<translate x="300" y="0" z="375" />
+		</transform>
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="1,0,0"/>
+		</bsdf>
+	</shape>
+	
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="10" y="10" z="10"/>
+			<translate x="300" y="0" z="275" />
+		</transform>
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="1,0,0"/>
+		</bsdf>
+	</shape>
+	
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="10" y="10" z="10"/>
+			<translate x="300" y="0" z="175" />
+		</transform>
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="1,0,0"/>
+		</bsdf>
+	</shape>-->
+
+	<shape type="sphere">
+		<transform name="toWorld">
+			<translate y="275" x="-80" z="275"/>
+		</transform>
+
+		<ref id="light"/>
+		<float name="radius" value="50"/>
+
+		<emitter type="area">
+			<spectrum name="radiance" value="400:1600, 500:1706, 600:1721.2, 700:1726.8"/>
+		</emitter>
+	</shape>
+	<!--<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale x="10" y="10" z="10"/>
+				<translate x="120" y="275" z="350"/>
+			</transform>
+			<transform time="1">
+				<scale x="10" y="10" z="10"/>
+				<translate x="120" y="275" z="275"/>
+			</transform>
+			<transform time="2">
+				<scale x="10" y="10" z="10"/>
+				<translate x="120" y="275" z="200"/>
+			</transform>
+		</animation>
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="1,0,0"/>
+		</bsdf>
+	</shape>-->
+
+	<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale y="400" x="10" z="250"/>
+				<translate y="275" x="200" z="610"/>
+			</transform>
+			<transform time="1">
+				<scale y="400" x="10" z="250"/>
+				<translate y="275" x="200" z="535"/>
+			</transform>
+			<transform time="2">
+				<scale y="400" x="10" z="250"/>
+				<translate y="275" x="200" z="460"/>
+			</transform>
+		</animation>
+
+		<ref id="wall_old"/>
+	</shape>
+
+	<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale y="195" x="10" z="10"/>
+				<translate y="70" x="200" z="350"/>
+			</transform>
+			<transform time="1">
+				<scale y="195" x="10" z="10"/>
+				<translate y="70" x="200" z="275"/>
+			</transform>
+			<transform time="2">
+				<scale y="195" x="10" z="10"/>
+				<translate y="70" x="200" z="200"/>
+			</transform>
+		</animation>
+
+		<ref id="wall_old"/>
+	</shape>
+
+	<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale y="195" x="10" z="10"/>
+				<translate y="480" x="200" z="350"/>
+			</transform>
+			<transform time="1">
+				<scale y="195" x="10" z="10"/>
+				<translate y="480" x="200" z="275"/>
+			</transform>
+			<transform time="2">
+				<scale y="195" x="10" z="10"/>
+				<translate y="480" x="200" z="200"/>
+			</transform>
+		</animation>
+
+		<ref id="wall_old"/>
+	</shape>
+
+	<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale y="400" x="10" z="250"/>
+				<translate y="275" x="200" z="90"/>
+			</transform>
+			<transform time="1">
+				<scale y="400" x="10" z="250"/>
+				<translate y="275" x="200" z="15"/>
+			</transform>
+			<transform time="2">
+				<scale y="400" x="10" z="250"/>
+				<translate y="275" x="200" z="-60"/>
+			</transform>
+		</animation>
+
+		<ref id="wall_old"/>
+	</shape>
+	<!--<shape type="obj">
+		<string name="filename" value="meshes/squarehole_smaller.obj"/>
+		
+		<animation name="toWorld">
+			<transform time="0">
+				<scale x="100" y="1000" z="1000"/>
+				<translate x="100" y="275" z="350"/>
+			</transform>
+			<transform time="1">
+				<scale x="1000" y="1000" z="1000"/>
+				<translate x="200" y="275" z="275"/>
+			</transform>
+			<transform time="2">
+				<scale x="1000" y="1000" z="1000"/>
+				<translate x="200" y="275" z="200"/>
+			</transform>
+		</animation>
+		<ref id="wall"/>
+	</shape>-->
+	<!--<shape type="cube">
+		<animation name="toWorld">
+			<transform time="0">
+				<scale x="70" y="500" z="15"/>
+			<translate x="165" y="0" z="150"/>
+			</transform>
+			<transform time="1">
+				<scale x="70" y="500" z="15"/>
+			<translate x="80" y="0" z="150"/>
+			</transform>
+			<transform time="2">
+				<scale x="70" y="500" z="15"/>
+			<translate x="165" y="0" z="150"/>
+			</transform>
+			<transform time="3">
+				<scale x="70" y="500" z="15"/>
+			<translate x="80" y="0" z="150"/>
+			</transform>
+		</animation>
+		<ref id="wall"/>
+	</shape>-->
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_floor.obj"/>
+		<transform name="toWorld">
+			<translate y="0" x="300" z="0"/>
+			<scale y="1" x="0.65" z="1"/>
+		</transform>
+
+		<ref id="wall_old"/>
+	</shape>
+	<!--<shape type="obj">
+		<string name="filename" value="meshes/cbox_ceiling.obj"/>
+
+		<ref id="wall"/>
+	</shape>
+	-->
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_back.obj"/>
+		<transform name="toWorld">
+			<translate y="0" x="300" z="0"/>
+			<scale y="1" x="0.65" z="1"/>
+		</transform>
+
+		<ref id="wall_old"/>
+	</shape>
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_back.obj"/>
+		<transform name="toWorld">
+			<rotate y="1" angle="180"/>
+			<translate y="0" x="855" z="565"/>
+			<scale y="1" x="0.65" z="1"/>
+		</transform>
+
+		<ref id="wall_old"/>
+	</shape>
+	<!--<shape type="obj">
+		<string name="filename" value="meshes/cbox_greenwall.obj"/>
+
+		<ref id="wall"/>
+	</shape>-->
+
+	<shape type="obj">
+		<string name="filename" value="meshes/cbox_redwall.obj"/>
+
+		<ref id="wall_old"/>
+	</shape>
+</scene>
