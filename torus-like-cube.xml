@@ -6,7 +6,7 @@
 
 <scene version="0.6.0">
 	<integrator type="mlt">
-		<integer name="directSamples" value="32768"/>
+		<integer name="directSamples" value="65000"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -19,11 +19,11 @@
 		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
 
-			<lookat target="278, 1140.84, 466.683" origin="278, 1141.8, 466.974" up="0, -0.290941, 0.956741"/>
+			<lookat target="278, 1140.84, 466.684" origin="278, 1141.8, 466.974" up="0, -0.290054, 0.95701"/>
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="32768"/>
+			<integer name="sampleCount" value="65000"/>
 		</sampler>
 
 		<film type="hdrfilm">
@@ -57,7 +57,7 @@
 
 	<emitter type="sunsky">
 		<transform name="toWorld">
-			<rotate angle="70" x="1"/>
+			<rotate x="1" angle="70"/>
 			<rotate angle="180" z="1"/>
 			<rotate angle="0" y="1"/>
 		</transform>
@@ -90,12 +90,12 @@
 		<animation name="toWorld">
 			<transform time="0">
 				<!--<translate z="1.5" y="2.5" x="2"/>-->
-				<translate z="1.5" y="2.75" x="2"/>
-				<scale z="100" y="100" x="100"/>
+				<translate x="2" z="1.5" y="2.75"/>
+				<scale x="100" z="100" y="100"/>
 			</transform>
 			<transform time="1">
-				<translate z="1.5" y="3" x="2"/>
-				<scale z="100" y="100" x="100"/>
+				<translate x="2" z="1.5" y="3"/>
+				<scale x="100" z="100" y="100"/>
 			</transform>
 		</animation>
 
@@ -105,13 +105,13 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<translate z="2" y="4.625" x="2.75"/>
+				<translate x="2.75" z="2" y="4.625"/>
 				<!--<translate z="2" y="4.25" x="2.75"/>-->
-				<scale z="60" y="60" x="60"/>
+				<scale x="60" z="60" y="60"/>
 			</transform>
 			<transform time="1">
-				<translate z="2" y="5" x="2.75"/>
-				<scale z="60" y="60" x="60"/>
+				<translate x="2.75" z="2" y="5"/>
+				<scale x="60" z="60" y="60"/>
 			</transform>
 		</animation>
 
@@ -122,8 +122,8 @@
 		<string name="filename" value="meshes/cbox_back.obj"/>
 		<transform name="toWorld">
 			<rotate angle="180" y="1"/>
-			<translate z="565" y="0" x="556"/>
-			<scale z="1" y="1" x="1"/>
+			<translate x="556" z="565" y="0"/>
+			<scale x="1" z="1" y="1"/>
 		</transform>
 
 		<ref id="wall"/>
