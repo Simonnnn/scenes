@@ -1,89 +1,53 @@
-2020-05-26 14:49:45 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-05-26 14:49:45 INFO  main [mitsuba.cpp:377] Parsing scene description from "flooting-cubes.xml" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
-2020-05-26 14:49:45 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/flooting-cubes.xml" (near line 86): Unqueried attribute "alpha" in element "bsdf"
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/plastic.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/sphere.so" ..
-2020-05-26 14:49:45 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-05-26 14:49:45 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (253 primitives) ..
-2020-05-26 14:49:45 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
-2020-05-26 14:49:45 INFO  ren0 [BDPTIntegrator] Starting render job (300x300, 262144 samples, 24 cores, SSE2 enabled) ..
-2020-05-26 14:50:01 WARN  wrk20[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:50:05 WARN  wrk21[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:51:35 WARN  wrk15[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:53:52 WARN  wrk7 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:54:17 WARN  wrk18[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:55:23 WARN  wrk0 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:57:24 WARN  wrk14[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:59:29 WARN  wrk22[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 14:59:56 WARN  wrk2 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:01:15 WARN  wrk22[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:01:29 WARN  wrk4 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:02:07 WARN  wrk22[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:02:54 WARN  wrk2 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:04:03 WARN  wrk8 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:06:47 WARN  wrk15[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:10:09 WARN  wrk16[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:10:49 WARN  wrk16[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:12:08 WARN  wrk2 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:12:46 WARN  wrk16[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:13:21 WARN  wrk10[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:13:55 WARN  wrk8 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:19:42 WARN  wrk1 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:21:03 WARN  wrk19[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:21:48 WARN  wrk4 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:22:17 WARN  wrk12[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:24:17 WARN  wrk4 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:29:59 WARN  wrk0 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:33:24 WARN  wrk0 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:33:58 WARN  wrk16[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:34:35 WARN  wrk19[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:38:24 WARN  wrk14[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:39:20 WARN  wrk23[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:42:04 WARN  wrk1 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:42:35 WARN  wrk8 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:43:11 WARN  wrk2 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:43:51 WARN  wrk9 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:45:06 WARN  wrk20[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:47:02 WARN  wrk18[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:49:28 WARN  wrk0 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:49:30 WARN  wrk17[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:50:18 WARN  wrk3 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:50:34 WARN  wrk0 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:50:37 WARN  wrk9 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:52:36 WARN  wrk18[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 15:52:51 WARN  wrk11[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:00:10 WARN  wrk18[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:02:51 WARN  wrk9 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:03:34 WARN  wrk18[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:12:48 WARN  wrk5 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:21:13 WARN  wrk0 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:27:05 WARN  wrk14[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:30:27 WARN  wrk21[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
-2020-05-26 16:36:27 INFO  ren0 [RenderJob] Render time: 1.7784h
-2020-05-26 16:36:27 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/flooting-cubes.exr" ..
-2020-05-26 16:36:27 INFO  main [statistics.cpp:142] Statistics:
+2020-05-26 19:50:23 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-05-26 19:50:23 INFO  main [mitsuba.cpp:377] Parsing scene description from "like_kitchen-2-new.xml" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/sunsky.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/sky.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/envmap.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
+2020-05-26 19:50:23 INFO  main [EnvironmentMap] Precomputing data structures for environment map sampling (515.0 KiB)
+2020-05-26 19:50:23 INFO  main [EnvironmentMap] Done (took 1 ms)
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/twosided.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-05-26 19:50:23 WARN  main [scenehandler.cpp:795] In file "/home/simon/scenes/like_kitchen-2-new.xml" (near line 125): Unqueried attribute "alpha" in element "bsdf"
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-05-26 19:50:23 INFO  main [PluginManager] Loading plugin "plugins/rectangle.so" ..
+2020-05-26 19:50:24 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (293 primitives) ..
+2020-05-26 19:50:24 INFO  ren0 [KDTreeBase] Finished -- took 4 ms.
+2020-05-26 19:50:24 INFO  ren0 [PluginManager] Loading plugin "plugins/sphere.so" ..
+2020-05-26 19:50:24 INFO  ren0 [BDPTIntegrator] Starting render job (350x350, 262144 samples, 24 cores, SSE2 enabled) ..
+2020-05-27 11:33:36 INFO  ren0 [RenderJob] Render time: 1.3100d
+2020-05-27 11:33:36 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/like_kitchen-2-new.exr" ..
+2020-05-27 11:33:36 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
-    -  plugins/area.so [Area light]
     -  plugins/bdpt.so [Bidirectional path tracer]
     -  plugins/box.so [Box filter]
     -  plugins/cube.so [Cube intersection primitive]
     -  plugins/dielectric.so [Smooth dielectric BSDF]
     -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/envmap.so [Environment map]
     -  plugins/hdrfilm.so [High dynamic range film]
     -  plugins/independent.so [Independent sampler]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
     -  plugins/perspective.so [Perspective camera]
-    -  plugins/plastic.so [Smooth plastic BRDF]
+    -  plugins/rectangle.so [Rectangle intersection primitive]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/sky.so [Skylight emitter]
     -  plugins/sphere.so [Sphere intersection primitive]
+    -  plugins/sunsky.so [Sun & sky emitter]
+    -  plugins/twosided.so [Two-sided BRDF adapter]
 
   * General :
-    -  Normal rays traced : 95.957 G
+    -  Normal rays traced : 526.317 G
+
+  * Texture system :
+    -  Cumulative MIP map memory allocations : 1 MiB
+    -  Filtered texture lookups : 0.00 % (0.00 of 350.71 G)
 ------------------------------------------------------------
