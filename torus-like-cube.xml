@@ -15,7 +15,7 @@
 		<float name="fov" value="39.3077"/>
 		<string name="fovAxis" value="x"/>
 		<float name="nearClip" value="10"/>
-		<float name="shutterClose" value="1"/>
+		<float name="shutterClose" value="0"/>
 		<float name="shutterOpen" value="0"/>
 		<transform name="toWorld">
 
@@ -89,7 +89,8 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<translate z="1.5" y="2.5" x="2"/>
+				<!--<translate z="1.5" y="2.5" x="2"/>-->
+				<translate z="1.5" y="2.75" x="2"/>
 				<scale z="100" y="100" x="100"/>
 			</transform>
 			<transform time="1">
@@ -104,7 +105,8 @@
 	<shape type="cube">
 		<animation name="toWorld">
 			<transform time="0">
-				<translate z="2" y="4.25" x="2.75"/>
+				<translate z="2" y="4.625" x="2.75"/>
+				<!--<translate z="2" y="4.25" x="2.75"/>-->
 				<scale z="60" y="60" x="60"/>
 			</transform>
 			<transform time="1">
