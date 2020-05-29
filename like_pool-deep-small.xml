@@ -1,0 +1,955 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+	Mitsuba conversion of the classic Cornell Box scene (mitsuba-renderer.org).
+	Edited by us to have an upside-down light source.
+-->
+
+<scene version="0.6.0">
+	<integrator type="bdpt">
+		<integer name="rrDepth" value="12"/>
+	</integrator>
+
+	<sensor type="perspective">
+		<float name="farClip" value="124.142"/>
+		<float name="focusDistance" value="30.2796"/>
+		<float name="fov" value="45"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="0.241421"/>
+		<transform name="toWorld">
+
+			<lookat origin="-7.3791e-7, 27.7906, -12.0613" up="4.33243e-8, 0.434005, 0.90091" target="-7.14e-7, 26.8897, -11.6273"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="262144"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<boolean name="banner" value="false"/>
+			<integer name="height" value="100"/>
+			<integer name="width" value="100"/>
+
+			<rfilter type="box"/>
+		</film>
+	</sensor>
+	<!--<sensor type="perspective">
+		<float name="farClip" value="280"/>
+		<float name="focusDistance" value="83.7611"/>
+		<float name="fov" value="50.9268"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="10"/>
+		<transform name="toWorld">
+
+			<lookat up="0, 1, 0" target="-24.7563, 17.4481, -64.6902" origin="-25.3244, 17.5139, -65.5105"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="25000"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<boolean name="banner" value="false"/>
+			<integer name="height" value="250"/>
+			<integer name="width" value="350"/>
+			<rfilter type="box"/>
+		</film>
+	</sensor>-->
+
+	<emitter type="sun">
+		<transform name="toWorld">
+			<rotate angle="-30" x="1"/>
+			<rotate angle="30" z="1"/>
+			<rotate angle="0" y="1"/>
+		</transform>
+		<float name="hour" value="11"/>
+		<float name="turbidity" value="5"/>
+		<float name="sunRadiusScale" value="4"/>
+	</emitter>
+	<!--<sensor type="perspective">
+		<float name="farClip" value="280"/>
+		<float name="focusDistance" value="78.6536"/>
+		<float name="fov" value="50.9268"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="10"/>
+		<transform name="toWorld">
+
+			<lookat up="0.163047, 0.976744, 0.139234" target="-72.5784, 23.4835, -61.9794" origin="-73.3211, 23.6979, -62.6137"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>-->
+
+	<bsdf type="diffuse" id="blue">
+		<rgb name="reflectance" value="0.031373 0.478431 0.760784"/>
+	</bsdf>
+
+	<bsdf type="dielectric" id="poolinside">
+		<float name="intIOR" value="1.54"/>
+		<float name="extIOR" value="1.00028"/>
+	</bsdf>
+
+	<bsdf type="twosided" id="CookerBlack">
+		<bsdf type="roughplastic">
+			<float name="alpha" value="0.08"/>
+			<string name="distribution" value="ggx"/>
+			<float name="intIOR" value="1.5"/>
+			<float name="extIOR" value="1"/>
+			<boolean name="nonlinear" value="true"/>
+			<rgb name="diffuseReflectance" value="0.015396, 0.015396, 0.015396"/>
+		</bsdf>
+	</bsdf>
+
+	<bsdf type="dielectric" id="CookerGlass">
+		<float name="intIOR" value="1.5"/>
+		<float name="extIOR" value="1"/>
+		<rgb name="specularTransmittance" value="0, 0, 0"/>
+	</bsdf>
+
+	<bsdf type="dielectric" id="WineGlasses">
+		<float name="intIOR" value="1.5"/>
+		<float name="extIOR" value="1"/>
+	</bsdf>
+
+	<bsdf type="diffuse" id="wall">
+		<rgb name="reflectance" value="1,1,1"/>
+	</bsdf>
+
+	<bsdf type="diffuse" id="red">
+		<rgb name="reflectance" value="1,0,0"/>
+	</bsdf>
+
+	<bsdf type="diffuse" id="green">
+		<rgb name="reflectance" value="0,1,0"/>
+	</bsdf>
+
+	<bsdf type="diffuse" id="color-blue">
+		<rgb name="reflectance" value="0,0,1"/>
+	</bsdf>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.75" z="1"/>
+			<translate x="0" y="-0.5" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="-4.8" z="1"/>
+			<translate x="2" y="-0.4" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="-2" y="0" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="-4.9" z="1"/>
+			<translate x="0" y="-0.2" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="0" y="0" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="-2" y="-0.5" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="2" y="-1" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="-2" y="-1" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.75" z="1"/>
+			<translate x="2" y="-0.5" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- another block -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="0" y="-0.8" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="2" y="-1" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-2" y="-0.2" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="0" y="-0.4" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="0" y="0" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-2" y="-0.6" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="2" y="-0.2" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="-2" y="-0.8" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="2" y="0" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- antoher blcok -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="0" y="-1" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="2" y="-0.8" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-2" y="-0.6" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="0" y="-0.4" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="0" y="0" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-2" y="-0.2" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="2" y="-0.6" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="-2" y="-0.8" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="2" y="-0.2" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- another column -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="6" y="-0.2" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="8" y="-0.8" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="4" y="-0.6" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="6" y="-1" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="6" y="-0.6" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="4" y="-0.4" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="8" y="-0.2" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="4" y="0" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="8" y="-0.6" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- another block -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="6" y="0" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="8" y="-0.4" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="4" y="-0.6" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="6" y="-0.4" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="6" y="-0.8" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="4" y="-0.2" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="8" y="-0.2" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="4" y="-0.2" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="8" y="-0.6" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- antoher blcok -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="6" y="-1" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="8" y="-0.8" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="4" y="-0.8" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="6" y="-0.8" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="6" y="-0.8" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="4" y="-0.4" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="8" y="-0.4" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="4" y="-0.4" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="8" y="-0.4" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- antoher colum 2 -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-6" y="-0.6" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="-4" y="-1" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-8" y="-0.4" z="0"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-6" y="-0.2" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-6" y="-0.4" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-8" y="-0.6" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-4" y="-0.6" z="-2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-8" y="-0.4" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="-4" y="0" z="2"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- another block -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="-6" y="-0.8" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="-4" y="-0.8" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-8" y="-0.2" z="6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-6" y="-0.2" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-6" y="-0.6" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-8" y="-0.6" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-4" y="-0.2" z="4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-8" y="-0.4" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-4" y="-0.4" z="8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- antoher blcok -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.5" z="1"/>
+			<translate x="-6" y="-1" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-4" y="-0.6" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-8" y="-0.4" z="-6"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-6" y="-0.2" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="1"/>
+			<translate x="-6" y="0" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.8" z="1"/>
+			<translate x="-8" y="-0.4" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.6" z="1"/>
+			<translate x="-4" y="-0.8" z="-8"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.7" z="1"/>
+			<translate x="-8" y="-0.6" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="4.9" z="1"/>
+			<translate x="-4" y="-0.2" z="-4"/>
+		</transform>
+
+		<ref id="poolinside"/>
+	</shape>
+	<!-- walls -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="10" y="5" z="1"/>
+			<translate x="-1" y="0" z="10"/>
+		</transform>
+
+		<ref id="blue"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="10"/>
+			<translate x="-10" y="0" z="-1"/>
+		</transform>
+
+		<ref id="blue"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="1" y="5" z="10"/>
+			<translate x="10" y="0" z="1"/>
+		</transform>
+
+		<ref id="blue"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="10" y="5" z="1"/>
+			<translate x="1" y="0" z="-10"/>
+		</transform>
+
+		<ref id="blue"/>
+	</shape>
+	<!-- floor -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="11" y="1" z="11"/>
+			<translate x="0" y="-6" z="0"/>
+		</transform>
+
+		<ref id="blue"/>
+	</shape>
+	<!-- outside up floor -->
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="18" y="0.3" z="4"/>
+			<translate x="0" y="5" z="-13"/>
+		</transform>
+
+		<ref id="wall"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="22" y="0.3" z="4"/>
+			<translate x="0" y="5" z="13"/>
+		</transform>
+
+		<ref id="wall"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="6" y="0.3" z="9"/>
+			<translate x="15" y="5" z="0"/>
+		</transform>
+
+		<ref id="wall"/>
+	</shape>
+
+	<shape type="cube">
+		<transform name="toWorld">
+			<scale x="6" y="0.3" z="9"/>
+			<translate x="-15" y="5" z="0"/>
+		</transform>
+
+		<ref id="wall"/>
+	</shape>
+</scene>
