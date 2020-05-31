@@ -1,3 +1,2 @@
-mitsuba like_kitchen-2.xml
-mitsuba like_pool-deep.xml
-mitsuba like_pool.xml
+mitsuba moving-square-wall-diffuse-new.xml
+mitsuba cube-diffuse-2.xml
