@@ -1,45 +1,50 @@
-2020-05-30 20:35:04 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
-2020-05-30 20:35:04 INFO  main [mitsuba.cpp:377] Parsing scene description from "cube-diffuse-2.xml" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Loading geometry from "cbox_luminaire.obj" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] cbox_luminaire: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Done with "cbox_luminaire.obj" (took 0 ms)
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
-2020-05-30 20:35:04 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-05-30 20:35:04 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-05-30 20:35:04 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
-2020-05-30 20:35:04 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
-2020-05-30 20:35:04 INFO  main [KDTreeBase] Finished -- took 0 ms.
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
-2020-05-30 20:35:04 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
-2020-05-30 20:35:04 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (206 primitives) ..
-2020-05-30 20:35:04 INFO  ren0 [KDTreeBase] Finished -- took 4 ms.
-2020-05-30 20:35:04 INFO  ren0 [BDPTIntegrator] Starting render job (150x150, 262144 samples, 24 cores, SSE2 enabled) ..
-2020-05-30 22:04:13 INFO  ren0 [RenderJob] Render time: 1.4859h
-2020-05-30 22:04:13 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/cube-diffuse-2.exr" ..
-2020-05-30 22:04:13 INFO  main [statistics.cpp:142] Statistics:
+2020-05-31 20:19:34 INFO  main [mitsuba.cpp:275] Mitsuba version 0.6.0 (Linux, 64 bit), Copyright (c) 2017 Wenzel Jakob
+2020-05-31 20:19:34 INFO  main [mitsuba.cpp:377] Parsing scene description from "moving-square-wall-diffuse-new-10.xml" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/independent.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/box.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/sphere.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/cube.so" ..
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2020-05-31 20:19:34 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2020-05-31 20:19:34 INFO  main [PluginManager] Loading plugin "plugins/obj.so" ..
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Loading geometry from "cbox_floor.obj" ..
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] cbox_floor: 2 triangles, 4 vertices (merged 2 vertices).
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Done with "cbox_floor.obj" (took 0 ms)
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Loading geometry from "cbox_back.obj" ..
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] cbox_back: 2 triangles, 4 vertices (merged 2 vertices).
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Done with "cbox_back.obj" (took 0 ms)
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Loading geometry from "cbox_redwall.obj" ..
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] cbox_redwall: 2 triangles, 4 vertices (merged 2 vertices).
+2020-05-31 20:19:34 INFO  main [WavefrontOBJ] Done with "cbox_redwall.obj" (took 0 ms)
+2020-05-31 20:19:34 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (13 primitives) ..
+2020-05-31 20:19:34 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
+2020-05-31 20:19:34 INFO  ren0 [BDPTIntegrator] Starting render job (125x150, 262144 samples, 24 cores, SSE2 enabled) ..
+2020-05-31 20:26:31 WARN  wrk11[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
+2020-05-31 20:32:32 WARN  wrk4 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
+2020-05-31 20:48:49 WARN  wrk10[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
+2020-05-31 21:34:37 WARN  wrk12[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
+2020-05-31 21:48:24 WARN  wrk11[ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
+2020-05-31 21:53:33 WARN  wrk7 [ImageBlock] Invalid sample value : [-nan, -nan, -nan, 1, 1]
+2020-05-31 22:40:11 INFO  ren0 [RenderJob] Render time: 2.3436h
+2020-05-31 22:40:11 INFO  ren0 [HDRFilm] Writing image to "/home/simon/scenes/moving-square-wall-diffuse-new-10.exr" ..
+2020-05-31 22:40:11 INFO  main [statistics.cpp:142] Statistics:
 ------------------------------------------------------------
  * Loaded plugins :
     -  plugins/area.so [Area light]
@@ -54,7 +59,8 @@
     -  plugins/perspective.so [Perspective camera]
     -  plugins/roughplastic.so [Rough plastic BRDF]
     -  plugins/shapegroup.so [Grouped geometry for instancing]
+    -  plugins/sphere.so [Sphere intersection primitive]
 
   * General :
-    -  Normal rays traced : 39.544 G
+    -  Normal rays traced : 54.747 G
 ------------------------------------------------------------
